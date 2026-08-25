@@ -1,0 +1,2062 @@
+[
+ {
+  "pages": 3,
+  "body_size": 12.0,
+  "hits": [
+   {
+    "concept": "필수와우대",
+    "page": 1,
+    "size": 12.0,
+    "rel_size": 0.0,
+    "y": 0.204,
+    "hidden_mark": false,
+    "matched": [
+     "필수"
+    ],
+    "text": "료기관에서재난대응, 필수의료등진료, 교육, 연구부문의공공성강화를담당하는의사임"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 1,
+    "size": 12.0,
+    "rel_size": 0.0,
+    "y": 0.779,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "3. 제출서류"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 2,
+    "size": 12.0,
+    "rel_size": 0.0,
+    "y": 0.082,
+    "hidden_mark": true,
+    "matched": [
+     "발급"
+    ],
+    "text": "자가발급한게재예정증명서를제출하여야함. {임용예정일(2026. 3. 1.) 이전게재예정에"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": -2.0,
+    "y": 0.672,
+    "hidden_mark": true,
+    "matched": [
+     "발급"
+    ],
+    "text": "- 근무기관폐업등의사유로경력증명서발급이어려운경우, 국민연금가입증명서(또는건강보험자격득실확인서)"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 3,
+    "size": 12.0,
+    "rel_size": 0.0,
+    "y": 0.082,
+    "hidden_mark": false,
+    "matched": [
+     "우대",
+     "우대사항"
+    ],
+    "text": "6. 우대사항"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 3,
+    "size": 12.0,
+    "rel_size": 0.0,
+    "y": 0.105,
+    "hidden_mark": false,
+    "matched": [
+     "우대"
+    ],
+    "text": "가. 취업지원대상자는관련법령이정하는바에따라우대함."
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 3,
+    "size": 12.0,
+    "rel_size": 0.0,
+    "y": 0.401,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류",
+     "원본",
+     "사본"
+    ],
+    "text": "아. 제출서류는원본을제출하여야하며부득이사본을제출할경우에는원본과대조후도장을"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 3,
+    "size": 12.0,
+    "rel_size": 0.0,
+    "y": 0.424,
+    "hidden_mark": true,
+    "matched": [
+     "발급"
+    ],
+    "text": "날인하여제출하고외국어로발급된증명서는번역문을첨부(영어제외)하여야함. 추후필요"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 3,
+    "size": 12.0,
+    "rel_size": 0.0,
+    "y": 0.515,
+    "hidden_mark": false,
+    "matched": [
+     "지원자격"
+    ],
+    "text": "차. 의사면허및전문의자격등의서류는지원자격파악을위해사용될예정이며, 기타심사"
+   },
+   {
+    "concept": "가점중복",
+    "page": 3,
+    "size": 12.0,
+    "rel_size": 0.0,
+    "y": 0.607,
+    "hidden_mark": false,
+    "matched": [
+     "중복"
+    ],
+    "text": "타. 2개이상의채용분야에중복지원할수없으며, 중복지원시접수를무효로함."
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 3,
+    "size": 10.0,
+    "rel_size": -2.0,
+    "y": 0.746,
+    "hidden_mark": true,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "※ 보관기간이경과한증빙서류는모두파기예정이며, 최종합격후임용된자에대해서는서류를반환하지않음."
+   }
+  ],
+  "seq": 294567,
+  "기관": "서울대학교병원",
+  "제목": "공공임상교수요원 공개채용",
+  "fileNo": "3016597",
+  "sha256": "3a8bbe2fa07f15f706f27291d311d6ab0fa3f4e3b5a9e60a4684e298b4ff0063"
+ },
+ {
+  "pages": 3,
+  "body_size": 11.0,
+  "hits": [
+   {
+    "concept": "서류리드타임",
+    "page": 1,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.747,
+    "hidden_mark": true,
+    "matched": [
+     "원본"
+    ],
+    "text": "※ 지원서 온라인 작성 후 구비서류(원본) 지참, 방문 또는 우편접수 해야 최종지원으로 인정됩니다."
+   },
+   {
+    "concept": "필수와우대",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.559,
+    "hidden_mark": true,
+    "matched": [
+     "필수"
+    ],
+    "text": "※ ‘26.8월 말 인턴 수료예정자는 합격 후 수련개시일(’26.9.1.)전까지 인턴 수료증 필수 제출"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.588,
+    "hidden_mark": false,
+    "matched": [
+     "미제출"
+    ],
+    "text": "인턴 수료증 미제출 또는 합격 후 추가수련 발생 등으로 ‘26.8월 말일까지 인턴 수련을 마치지"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.458,
+    "hidden_mark": false,
+    "matched": [
+     "사본"
+    ],
+    "text": "의사면허증 사본 : 1부"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 2,
+    "size": 15.0,
+    "rel_size": 4.0,
+    "y": 0.072,
+    "hidden_mark": false,
+    "matched": [
+     "응시자격"
+    ],
+    "text": "응시자격 및 응시제한"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.305,
+    "hidden_mark": false,
+    "matched": [
+     "중복"
+    ],
+    "text": "타병원 중복지원 불가."
+   },
+   {
+    "concept": "필수와우대",
+    "page": 3,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.195,
+    "hidden_mark": false,
+    "matched": [
+     "응시자격"
+    ],
+    "text": "∙ 제출서류는 응시자격조회 및 신원확인 이외의 용도로 사용하지 않음."
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 3,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.195,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "∙ 제출서류는 응시자격조회 및 신원확인 이외의 용도로 사용하지 않음."
+   }
+  ],
+  "seq": 295102,
+  "기관": "충북대학교병원",
+  "제목": "2026년도 상반기 충북대학교병원 전공의(레지던트 1년차) 추가 모집 공고",
+  "fileNo": "3019298",
+  "sha256": "f60b0503010c1efbfd785396e1902d26a4e04d086e5802a1bf5e6288038b31d0"
+ },
+ {
+  "pages": 5,
+  "body_size": 10.0,
+  "hits": [
+   {
+    "concept": "필수와우대",
+    "page": 1,
+    "size": 12.0,
+    "rel_size": 2.0,
+    "y": 0.495,
+    "hidden_mark": false,
+    "matched": [
+     "응시자격"
+    ],
+    "text": "□ 응시자격"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 1,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.581,
+    "hidden_mark": false,
+    "matched": [
+     "응시자격"
+    ],
+    "text": "병원 인사규정 제24조 결격사유에 해당하거나, 기타 법령에 따라 응시자격이 정지된 자는 응시할 수 없음"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 1,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.629,
+    "hidden_mark": false,
+    "matched": [
+     "응시자격"
+    ],
+    "text": "응시자격"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 1,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.65,
+    "hidden_mark": false,
+    "matched": [
+     "필수"
+    ],
+    "text": "[필수] 약사면허 소지자 또는 2026년 약사면허 취득예정자"
+   },
+   {
+    "concept": "자격기준일",
+    "page": 1,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.675,
+    "hidden_mark": true,
+    "matched": [
+     "기준으로"
+    ],
+    "text": "※ 응시자격은 공고 마감 기준으로 판단"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 1,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.675,
+    "hidden_mark": true,
+    "matched": [
+     "응시자격"
+    ],
+    "text": "※ 응시자격은 공고 마감 기준으로 판단"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 1,
+    "size": 15.0,
+    "rel_size": 5.0,
+    "y": 0.463,
+    "hidden_mark": false,
+    "matched": [
+     "응시자격"
+    ],
+    "text": "Ⅱ응시자격 및 제출서류"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 1,
+    "size": 15.0,
+    "rel_size": 5.0,
+    "y": 0.463,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "Ⅱ응시자격 및 제출서류"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 12.0,
+    "rel_size": 2.0,
+    "y": 0.248,
+    "hidden_mark": false,
+    "matched": [
+     "가산"
+    ],
+    "text": "□ 가산점 안내"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 2,
+    "size": 12.0,
+    "rel_size": 2.0,
+    "y": 0.597,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "□ 제출서류"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.665,
+    "hidden_mark": false,
+    "matched": [
+     "필수"
+    ],
+    "text": "필수"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.659,
+    "hidden_mark": false,
+    "matched": [
+     "사본"
+    ],
+    "text": "□ 면허증 사본 1부."
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.71,
+    "hidden_mark": true,
+    "matched": [
+     "미제출"
+    ],
+    "text": "공고 기간 중 미제출(미업로드) 시 불합격 처리"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.748,
+    "hidden_mark": true,
+    "matched": [
+     "가산",
+     "가점"
+    ],
+    "text": "□ 가산점 관련 증명서(장애인 증명서, 취업지원대상자 증명서) 1부. (미등록시 가점 미부여)"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.803,
+    "hidden_mark": true,
+    "matched": [
+     "사본"
+    ],
+    "text": "□ 채용분야_성명_서류종류 (약무직_홍길동_면허증 사본 1부)"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.821,
+    "hidden_mark": true,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "□ 입사지원서에 외국어, 자격(면허)증, 경력 등 기재 시 반드시 증빙서류 제출"
+   },
+   {
+    "concept": "자격기준일",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.856,
+    "hidden_mark": false,
+    "matched": [
+     "기준으로",
+     "마감일 기준"
+    ],
+    "text": "□ 공고 마감일 기준으로 판단"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.293,
+    "hidden_mark": false,
+    "matched": [
+     "가점"
+    ],
+    "text": "가점"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.312,
+    "hidden_mark": false,
+    "matched": [
+     "발급"
+    ],
+    "text": "□ 증명서는 관할 보훈지청에서 발급하며, 제출처란에 “충남대학교병원”을 반드시 명시"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.364,
+    "hidden_mark": false,
+    "matched": [
+     "가점"
+    ],
+    "text": "□ 취업지원대상자 가점을 받아 합격하는 사람은 선발예정인원의 30%를 초과할 수 없음."
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.405,
+    "hidden_mark": false,
+    "matched": [
+     "가점"
+    ],
+    "text": "가점"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.423,
+    "hidden_mark": false,
+    "matched": [
+     "필수"
+    ],
+    "text": "□ 장애인증명서 제출이 원칙이며, 복지카드 제출 시 양면 제출 필수"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.466,
+    "hidden_mark": false,
+    "matched": [
+     "중복"
+    ],
+    "text": "□ 중복일 경우 둘 중 유리한 것으로 적용"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.486,
+    "hidden_mark": false,
+    "matched": [
+     "가점"
+    ],
+    "text": "□ 증빙서류 미제출 시 가점 적용 불가"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.486,
+    "hidden_mark": false,
+    "matched": [
+     "증빙서류",
+     "미제출"
+    ],
+    "text": "□ 증빙서류 미제출 시 가점 적용 불가"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.503,
+    "hidden_mark": false,
+    "matched": [
+     "가점"
+    ],
+    "text": "□ 채용시험이 필기·실기·면접시험 등으로 구분되어 실시할 때는 각 시험마다 가점하며, 둘 이상의"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.522,
+    "hidden_mark": false,
+    "matched": [
+     "가점 대상"
+    ],
+    "text": "과목으로 실시하는 시험에서는 과목별로 가점함. 다만, 가점 대상자의 점수가 만점의 40%"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.522,
+    "hidden_mark": false,
+    "matched": [
+     "가점"
+    ],
+    "text": "과목으로 실시하는 시험에서는 과목별로 가점함. 다만, 가점 대상자의 점수가 만점의 40%"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.56,
+    "hidden_mark": false,
+    "matched": [
+     "가점"
+    ],
+    "text": "면접위원 2/3 이상 “하”평정인 대상자도 가점은 적용하지 아니함)"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 3,
+    "size": 12.0,
+    "rel_size": 2.0,
+    "y": 0.21,
+    "hidden_mark": false,
+    "matched": [
+     "응시자격"
+    ],
+    "text": "□ 전형단계 : 전형단계별 합격자에게만 다음 단계 응시자격이 부여됨"
+   },
+   {
+    "concept": "가점중복",
+    "page": 3,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.089,
+    "hidden_mark": true,
+    "matched": [
+     "만 인정"
+    ],
+    "text": "□ 해당기관에서 발행한 경력(재직)증명서만 인정함(국민연금가입확인서, 건강보험자격득실확인서 등 불인정)"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 3,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.791,
+    "hidden_mark": true,
+    "matched": [
+     "응시자격"
+    ],
+    "text": "■ 증빙서류 (「Ⅱ. 응시자격 및 제출서류」 참고)"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 3,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.791,
+    "hidden_mark": true,
+    "matched": [
+     "제출서류",
+     "증빙서류"
+    ],
+    "text": "■ 증빙서류 (「Ⅱ. 응시자격 및 제출서류」 참고)"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 3,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.81,
+    "hidden_mark": false,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "○ 제출방법 : 증빙서류 스캔본을 업로드"
+   },
+   {
+    "concept": "자격기준일",
+    "page": 3,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.829,
+    "hidden_mark": true,
+    "matched": [
+     "기준으로"
+    ],
+    "text": "○ 평가기준 : 공고마감 기준으로 필수제출 서류 업로드(제출) 여부"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 3,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.829,
+    "hidden_mark": true,
+    "matched": [
+     "필수"
+    ],
+    "text": "○ 평가기준 : 공고마감 기준으로 필수제출 서류 업로드(제출) 여부"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.516,
+    "hidden_mark": false,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "증빙서류"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.546,
+    "hidden_mark": false,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "증빙서류는 진위확인을 위해서만 활용되며 심사위원 등에게는 제공되지 않습니다"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.724,
+    "hidden_mark": false,
+    "matched": [
+     "미제출"
+    ],
+    "text": "□ 입사지원서 작성 시 허위기재, 누락, 기재착오, 구비서류 미제출, 연락불가, 연락처 오기재 등으로 인한"
+   },
+   {
+    "concept": "가점중복",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.779,
+    "hidden_mark": false,
+    "matched": [
+     "만 인정"
+    ],
+    "text": "접수기간 내 제출한 것만 인정"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.811,
+    "hidden_mark": false,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "증빙서류"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.795,
+    "hidden_mark": false,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "□ 외국어, 자격⋅면허, 경력사항 등은 증빙서류 첨부"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.811,
+    "hidden_mark": true,
+    "matched": [
+     "미제출"
+    ],
+    "text": "□ 모든 서류는 암호화 해제 후 업로드(암호화된 서류 업로드시 미제출로 처리)"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.827,
+    "hidden_mark": true,
+    "matched": [
+     "필수"
+    ],
+    "text": "□ 필수 제출서류 미제출 시 서류 불합격 처리(남성의 경우 병적증명서 필수 제출)"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.827,
+    "hidden_mark": true,
+    "matched": [
+     "제출서류",
+     "미제출"
+    ],
+    "text": "□ 필수 제출서류 미제출 시 서류 불합격 처리(남성의 경우 병적증명서 필수 제출)"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.844,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "□ 추후 지원서 작성, 제출서류가 허위 또는 사실과 다른 경우 합격 또는 임용이 취소될 수 있으며"
+   },
+   {
+    "concept": "가점중복",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.092,
+    "hidden_mark": true,
+    "matched": [
+     "만 인정"
+    ],
+    "text": "○ 인정신분증(모든 신분증은 원본만 인정) : 주민등록증, 운전면허증, 주민등록증 발급신청 확인서"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.092,
+    "hidden_mark": true,
+    "matched": [
+     "발급",
+     "원본"
+    ],
+    "text": "○ 인정신분증(모든 신분증은 원본만 인정) : 주민등록증, 운전면허증, 주민등록증 발급신청 확인서"
+   },
+   {
+    "concept": "자격기준일",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.339,
+    "hidden_mark": true,
+    "matched": [
+     "기준으로"
+    ],
+    "text": "※ 전형이 없는 경우(필기시험, 실무면접) 차순위 처리기준으로 적용"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 5,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.354,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "□ 최종합격자 제출서류의 경우 추후 공지"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 5,
+    "size": 10.0,
+    "rel_size": 0.0,
+    "y": 0.596,
+    "hidden_mark": true,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "요구 없이 자발적으로 제출하였으면 반환하지 않음. (온라인 제출서류는 일정기간 보관 후 폐기)"
+   }
+  ],
+  "seq": 295107,
+  "기관": "충남대학교병원",
+  "제목": "[대전] 2026년 1월 충남대학교병원 약무직(약사, 면허취득예정자) 공개채용 공고",
+  "fileNo": "3019339",
+  "sha256": "9f0ccb781e67e5ba5db7f0229a12d9fa59f65edf9dbc448dab84c39333698804"
+ },
+ {
+  "pages": 6,
+  "body_size": 11.0,
+  "hits": [
+   {
+    "concept": "필수와우대",
+    "page": 2,
+    "size": 15.9,
+    "rel_size": 4.9,
+    "y": 0.398,
+    "hidden_mark": false,
+    "matched": [
+     "지원자격"
+    ],
+    "text": "지원자격"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.582,
+    "hidden_mark": false,
+    "matched": [
+     "지원자격"
+    ],
+    "text": "[레지던트 1년차 지원자격 확대 관련 조치]"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.645,
+    "hidden_mark": true,
+    "matched": [
+     "발급"
+    ],
+    "text": "- (지원 시) 지원병원에 수료예정일을 증명할 수 있는 서류(인턴 수련병원에서 발급)를 제출"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.687,
+    "hidden_mark": true,
+    "matched": [
+     "필수"
+    ],
+    "text": "말일까지 수료 및 인턴 수련교과과정 이수 여부 증빙) 필수 제출※"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.708,
+    "hidden_mark": true,
+    "matched": [
+     "미제출"
+    ],
+    "text": "※ 인턴 수료증 미제출 또는 합격 후 추가수련 발생 등으로 ’26.8월 말일까지 인턴 수련을"
+   },
+   {
+    "concept": "가점중복",
+    "page": 3,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.105,
+    "hidden_mark": true,
+    "matched": [
+     "중복"
+    ],
+    "text": "가능 (중복지원 불가))"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 15.9,
+    "rel_size": 4.9,
+    "y": 0.279,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "제출서류"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 4,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.648,
+    "hidden_mark": true,
+    "matched": [
+     "응시자격"
+    ],
+    "text": "※ 본 채용은 공공기관 블라인드 채용 가이드라인에 따라 실시하며, 제출서류는 지원자의 응시자격"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.648,
+    "hidden_mark": true,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "※ 본 채용은 공공기관 블라인드 채용 가이드라인에 따라 실시하며, 제출서류는 지원자의 응시자격"
+   },
+   {
+    "concept": "가점중복",
+    "page": 4,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.71,
+    "hidden_mark": true,
+    "matched": [
+     "만 인정"
+    ],
+    "text": "※ 모든 제출 서류는 3개월 이내 발행서류만 인정하오니 참고하시기 바랍니다."
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.324,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "제출서류"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.394,
+    "hidden_mark": true,
+    "matched": [
+     "사본"
+    ],
+    "text": "② 의사면허증 사본(A4용지 크기)"
+   },
+   {
+    "concept": "가점중복",
+    "page": 5,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.544,
+    "hidden_mark": false,
+    "matched": [
+     "중복"
+    ],
+    "text": "나. 중복지원은 불가하며 적발 시 불합격 처리됩니다."
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 5,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.565,
+    "hidden_mark": true,
+    "matched": [
+     "기한 내"
+    ],
+    "text": "다. 신체검사 관련 유의 사항(합격자 서류제출 시 필요하므로 사전 확인하여 기한 내 제출할 수"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 5,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.628,
+    "hidden_mark": false,
+    "matched": [
+     "발급"
+    ],
+    "text": "이내 병원에서 발급한 채용신체검사 결과에 한하여 인정합니다."
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 5,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.669,
+    "hidden_mark": false,
+    "matched": [
+     "발급"
+    ],
+    "text": "발급 받은 채용신체검사서 중 “합격, 정상” 이외 판정을 받은 지원자는 소견서를 첨부하여"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 5,
+    "size": 11.6,
+    "rel_size": 0.6,
+    "y": 0.712,
+    "hidden_mark": true,
+    "matched": [
+     "발급"
+    ],
+    "text": "- 일반건강검진 결과 통보서 발급 방법: 국민건강보험공단 홈페이지(https://www.nhis.or.kr) →"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 5,
+    "size": 10.0,
+    "rel_size": -1.0,
+    "y": 0.837,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "제출서류"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 5,
+    "size": 10.0,
+    "rel_size": -1.0,
+    "y": 0.856,
+    "hidden_mark": true,
+    "matched": [
+     "발급"
+    ],
+    "text": "※ 결과통보서 발급기간은 수검 후 약2주가량 소요되므로, 2024년 이후 수검하지 않은 지원자는 서류"
+   },
+   {
+    "concept": "가점중복",
+    "page": 6,
+    "size": 11.0,
+    "rel_size": 0.0,
+    "y": 0.126,
+    "hidden_mark": false,
+    "matched": [
+     "가산"
+    ],
+    "text": "마. 병역필자에 대한 가산점은 적용하지 않습니다."
+   }
+  ],
+  "seq": 295109,
+  "기관": "경상국립대학교병원",
+  "제목": "[창원경상국립대학교병원]2026년도 상반기 전공의(레지던트 1년차) 추가모집 공고",
+  "fileNo": "3019361",
+  "sha256": "9625c9518f23d1160cca31f8312b2412c88b9c9e30f47f3b257a698f06f7da73"
+ },
+ {
+  "pages": 8,
+  "body_size": 14.0,
+  "hits": [
+   {
+    "concept": "필수와우대",
+    "page": 1,
+    "size": 15.0,
+    "rel_size": 1.0,
+    "y": 0.406,
+    "hidden_mark": false,
+    "matched": [
+     "우대",
+     "지원자격",
+     "우대사항"
+    ],
+    "text": "지원자격 및 우대사항"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 1,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.451,
+    "hidden_mark": false,
+    "matched": [
+     "우대",
+     "지원자격",
+     "우대사항"
+    ],
+    "text": "지원자격 및 우대사항"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 1,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.262,
+    "hidden_mark": false,
+    "matched": [
+     "지원자격"
+    ],
+    "text": "지원자격"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 15.0,
+    "rel_size": 1.0,
+    "y": 0.063,
+    "hidden_mark": false,
+    "matched": [
+     "가점"
+    ],
+    "text": "가점 및 동점자 처리기준"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.297,
+    "hidden_mark": false,
+    "matched": [
+     "가점"
+    ],
+    "text": "가점"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": -4.0,
+    "y": 0.187,
+    "hidden_mark": false,
+    "matched": [
+     "가산"
+    ],
+    "text": "가산점"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": -4.0,
+    "y": 0.24,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "제출서류"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 2,
+    "size": 10.0,
+    "rel_size": -4.0,
+    "y": 0.248,
+    "hidden_mark": false,
+    "matched": [
+     "사본"
+    ],
+    "text": "장애인등록증 사본"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.274,
+    "hidden_mark": false,
+    "matched": [
+     "가점"
+    ],
+    "text": "조에 따른 취업지원대상자 가점 부여"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.295,
+    "hidden_mark": false,
+    "matched": [
+     "가점"
+    ],
+    "text": "취업지원대상자 가점 부여 기준은 별첨 파일 참조관련 법령에 따름"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.316,
+    "hidden_mark": false,
+    "matched": [
+     "가점"
+    ],
+    "text": "장애인고용촉진 및 직업재활법에서 정한 등록장애인 가점 부여"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.358,
+    "hidden_mark": false,
+    "matched": [
+     "가산",
+     "가점"
+    ],
+    "text": "정한 지역인재 가점 부여개 모두 해당하더라도지역인재 가산점은 한번만 적용"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.415,
+    "hidden_mark": true,
+    "matched": [
+     "가점"
+    ],
+    "text": "지원한 준고령자 및 고령자* 가점부여"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.462,
+    "hidden_mark": false,
+    "matched": [
+     "가점",
+     "중복"
+    ],
+    "text": "가점 중복 적용 가능"
+   },
+   {
+    "concept": "가점중복",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.785,
+    "hidden_mark": true,
+    "matched": [
+     "가점"
+    ],
+    "text": "※ 지원서 작성 시 가점 및 동점자 처리기준에 해당되는 사항을 기재하지 않을 경우 가점 및 동점자"
+   },
+   {
+    "concept": "가점중복",
+    "page": 3,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.23,
+    "hidden_mark": false,
+    "matched": [
+     "가산"
+    ],
+    "text": "서류심사 결과가산점 포함"
+   },
+   {
+    "concept": "가점중복",
+    "page": 3,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.37,
+    "hidden_mark": false,
+    "matched": [
+     "가산"
+    ],
+    "text": "면접심사 결과가산점 포함"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 3,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.39,
+    "hidden_mark": false,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "증빙서류 제출 및 신체검사 등"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 15.0,
+    "rel_size": 1.0,
+    "y": 0.148,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "제출서류 및 유의사항"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 4,
+    "size": 14.0,
+    "rel_size": 0.0,
+    "y": 0.897,
+    "hidden_mark": false,
+    "matched": [
+     "우대",
+     "자격요건",
+     "우대사항"
+    ],
+    "text": "입원지원서 및 제출서류의 인적정보는 자격요건우대사항"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 14.0,
+    "rel_size": 0.0,
+    "y": 0.897,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "입원지원서 및 제출서류의 인적정보는 자격요건우대사항"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.185,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "제출서류 및 인정기준"
+   },
+   {
+    "concept": "가점중복",
+    "page": 4,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.246,
+    "hidden_mark": false,
+    "matched": [
+     "가점"
+    ],
+    "text": "가점 관련 증빙서류해당자"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.246,
+    "hidden_mark": false,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "가점 관련 증빙서류해당자"
+   },
+   {
+    "concept": "가점중복",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": -4.0,
+    "y": 0.269,
+    "hidden_mark": false,
+    "matched": [
+     "만 인정"
+    ],
+    "text": "취업지원대상자 증명서한국과학기술기획평가원을 제출처로 발급받은 것만 인정"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": -4.0,
+    "y": 0.269,
+    "hidden_mark": false,
+    "matched": [
+     "발급"
+    ],
+    "text": "취업지원대상자 증명서한국과학기술기획평가원을 제출처로 발급받은 것만 인정"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": -4.0,
+    "y": 0.289,
+    "hidden_mark": false,
+    "matched": [
+     "발급"
+    ],
+    "text": "에서 발급한 장애인증명서"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.326,
+    "hidden_mark": false,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "교육사항 증빙서류해당자"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.386,
+    "hidden_mark": false,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "자격면허 증빙서류해당자"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": -4.0,
+    "y": 0.409,
+    "hidden_mark": false,
+    "matched": [
+     "사본"
+    ],
+    "text": "자격증면허증사본 또는 자격취득확인서"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": -4.0,
+    "y": 0.45,
+    "hidden_mark": false,
+    "matched": [
+     "발급"
+    ],
+    "text": "를 발급받아 공증해야 하며"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.529,
+    "hidden_mark": false,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "연구실적 증빙서류해당자"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 11.0,
+    "rel_size": -3.0,
+    "y": 0.549,
+    "hidden_mark": false,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "기타 증빙서류해당자"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 10.0,
+    "rel_size": -4.0,
+    "y": 0.715,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류",
+     "발급"
+    ],
+    "text": "제출서류는 제출일 기준 년 이내 발급된 것에 한하여 인정합니다"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 5,
+    "size": 14.0,
+    "rel_size": 0.0,
+    "y": 0.094,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "입원지원서 작성내용 및 제출서류에 대해서는 최종면접 합격자를"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 5,
+    "size": 14.0,
+    "rel_size": 0.0,
+    "y": 0.174,
+    "hidden_mark": false,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "대해서는 필요 시 추가 증빙서류를 요구할 수 있으며"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 5,
+    "size": 14.0,
+    "rel_size": 0.0,
+    "y": 0.227,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "채용 전형일정을 고려하여 제출서류를 사전에 준비해 주시기 바랍니다"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 5,
+    "size": 14.0,
+    "rel_size": 0.0,
+    "y": 0.253,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류",
+     "미제출",
+     "기한 내"
+    ],
+    "text": "제출서류를 기한 내에 미제출하는 경우"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 5,
+    "size": 14.0,
+    "rel_size": 0.0,
+    "y": 0.253,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "제출서류가 입원지원서"
+   },
+   {
+    "concept": "가점중복",
+    "page": 6,
+    "size": 14.0,
+    "rel_size": 0.0,
+    "y": 0.87,
+    "hidden_mark": false,
+    "matched": [
+     "중복"
+    ],
+    "text": "각 채용분야별 중복지원 불가중복지원 시 모두 불합격 처리"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 6,
+    "size": 12.0,
+    "rel_size": -2.0,
+    "y": 0.713,
+    "hidden_mark": false,
+    "matched": [
+     "우대",
+     "우대사항"
+    ],
+    "text": "내 인적사항가점 및 동점자우대사항 입력란을 제외하고"
+   },
+   {
+    "concept": "가점중복",
+    "page": 6,
+    "size": 12.0,
+    "rel_size": -2.0,
+    "y": 0.713,
+    "hidden_mark": false,
+    "matched": [
+     "가점"
+    ],
+    "text": "내 인적사항가점 및 동점자우대사항 입력란을 제외하고"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 7,
+    "size": 14.0,
+    "rel_size": 0.0,
+    "y": 0.187,
+    "hidden_mark": false,
+    "matched": [
+     "미제출"
+    ],
+    "text": "구비서류 미제출"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 7,
+    "size": 14.0,
+    "rel_size": 0.0,
+    "y": 0.187,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "제출서류가 허위위조대필임이"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 8,
+    "size": 14.0,
+    "rel_size": 0.0,
+    "y": 0.067,
+    "hidden_mark": false,
+    "matched": [
+     "증빙서류",
+     "원본"
+    ],
+    "text": "증빙서류원본에"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 8,
+    "size": 14.0,
+    "rel_size": 0.0,
+    "y": 0.152,
+    "hidden_mark": false,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "및 관계 법령에 의거 증빙서류 제출 시"
+   }
+  ],
+  "seq": 295272,
+  "기관": "한국과학기술기획평가원",
+  "제목": "제2026-1회 한국과학기술기획평가원 정규직(공무직) 공개채용 재공고",
+  "fileNo": "3020316",
+  "sha256": "8fde702a7927d3329f018926dc34fe5311d90a35c20c88d6061c7820d190ec8e"
+ },
+ {
+  "pages": 10,
+  "body_size": 12.9,
+  "hits": [
+   {
+    "concept": "필수와우대",
+    "page": 1,
+    "size": 14.0,
+    "rel_size": 1.1,
+    "y": 0.329,
+    "hidden_mark": false,
+    "matched": [
+     "응시자격"
+    ],
+    "text": "1. 채용분야 및 응시자격"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 1,
+    "size": 12.0,
+    "rel_size": -0.9,
+    "y": 0.382,
+    "hidden_mark": false,
+    "matched": [
+     "응시자격"
+    ],
+    "text": "직무내용 및 응시자격"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 1,
+    "size": 11.6,
+    "rel_size": -1.3,
+    "y": 0.497,
+    "hidden_mark": false,
+    "matched": [
+     "필수"
+    ],
+    "text": "[필수] 아래 사항을 모두 충족하는 자"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 2,
+    "size": 11.7,
+    "rel_size": -1.2,
+    "y": 0.205,
+    "hidden_mark": false,
+    "matched": [
+     "응시자격"
+    ],
+    "text": "응시자격 등"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 2,
+    "size": 11.0,
+    "rel_size": -1.9,
+    "y": 0.424,
+    "hidden_mark": false,
+    "matched": [
+     "응시자격"
+    ],
+    "text": "외국어등으로평가). 단, 응시자가합격배수이하일경우에는응시자격적부심사로서류"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 3,
+    "size": 12.0,
+    "rel_size": -0.9,
+    "y": 0.36,
+    "hidden_mark": true,
+    "matched": [
+     "필수",
+     "응시자격"
+    ],
+    "text": "③ (필수) 필수응시자격에 해당하는 면허(자격)증 증빙서류"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 3,
+    "size": 12.0,
+    "rel_size": -0.9,
+    "y": 0.36,
+    "hidden_mark": true,
+    "matched": [
+     "증빙서류"
+    ],
+    "text": "③ (필수) 필수응시자격에 해당하는 면허(자격)증 증빙서류"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 3,
+    "size": 12.0,
+    "rel_size": -0.9,
+    "y": 0.383,
+    "hidden_mark": true,
+    "matched": [
+     "사본"
+    ],
+    "text": "- 의사 면허 및 해당 분야(응급의학과, 내과, 외과, 소아청소년과) 전문의 자격증 사본"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 3,
+    "size": 12.0,
+    "rel_size": -0.9,
+    "y": 0.405,
+    "hidden_mark": true,
+    "matched": [
+     "필수"
+    ],
+    "text": "④ (필수) 경력(재직)증명서 원본 등 필수 자격 경력 증빙 서류"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 3,
+    "size": 12.0,
+    "rel_size": -0.9,
+    "y": 0.405,
+    "hidden_mark": true,
+    "matched": [
+     "원본"
+    ],
+    "text": "④ (필수) 경력(재직)증명서 원본 등 필수 자격 경력 증빙 서류"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 3,
+    "size": 12.0,
+    "rel_size": -0.9,
+    "y": 0.451,
+    "hidden_mark": true,
+    "matched": [
+     "원본"
+    ],
+    "text": "⑤ (해당자에 한함) 공인외국어시험(TOEIC, New TEPS, TOEFL-PBT,iBT, G-TELP, FLEX) 성적표 원본"
+   },
+   {
+    "concept": "가점중복",
+    "page": 3,
+    "size": 10.8,
+    "rel_size": -2.1,
+    "y": 0.495,
+    "hidden_mark": true,
+    "matched": [
+     "만 인정"
+    ],
+    "text": "※ TOEIC은 국내 시행 시험만 인정"
+   },
+   {
+    "concept": "자격기준일",
+    "page": 3,
+    "size": 10.8,
+    "rel_size": -2.1,
+    "y": 0.516,
+    "hidden_mark": true,
+    "matched": [
+     "마감일 기준"
+    ],
+    "text": "※ 공고마감일 기준 유효기간 내 성적만 제출 가능"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 3,
+    "size": 14.0,
+    "rel_size": 1.1,
+    "y": 0.713,
+    "hidden_mark": false,
+    "matched": [
+     "자격 요건"
+    ],
+    "text": "○ 응시 희망자는 자격 요건 등이 적합한지를 정확히 판단하여 지원해 주시기"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 3,
+    "size": 14.0,
+    "rel_size": 1.1,
+    "y": 0.77,
+    "hidden_mark": false,
+    "matched": [
+     "필수",
+     "응시자격"
+    ],
+    "text": "○ 필수 응시자격에 부합하는 자격사항 또는 경력사항을 입사지원서에 미입력 시"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 3,
+    "size": 14.0,
+    "rel_size": 1.1,
+    "y": 0.827,
+    "hidden_mark": false,
+    "matched": [
+     "미제출"
+    ],
+    "text": "○ 입사지원서 등에 허위기재 또는 기재착오, 구비서류 미제출 등으로 인한"
+   },
+   {
+    "concept": "자격기준일",
+    "page": 4,
+    "size": 14.0,
+    "rel_size": 1.1,
+    "y": 0.132,
+    "hidden_mark": false,
+    "matched": [
+     "마감일 기준"
+    ],
+    "text": "▪ 외국어시험 등 유효기간이 있는 자격증은 공고마감일 기준 유효기간 내의"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 4,
+    "size": 14.0,
+    "rel_size": 1.1,
+    "y": 0.21,
+    "hidden_mark": false,
+    "matched": [
+     "우대",
+     "응시자격"
+    ],
+    "text": "▪ 응시자격 및 우대요건과 관련한 경력사항, 자격증 소지여부, 어학성적 등은"
+   },
+   {
+    "concept": "가점중복",
+    "page": 4,
+    "size": 12.9,
+    "rel_size": 0.0,
+    "y": 0.394,
+    "hidden_mark": false,
+    "matched": [
+     "중복"
+    ],
+    "text": "대한 중복지원은 불가합니다."
+   },
+   {
+    "concept": "가점중복",
+    "page": 4,
+    "size": 14.0,
+    "rel_size": 1.1,
+    "y": 0.419,
+    "hidden_mark": false,
+    "matched": [
+     "중복"
+    ],
+    "text": "▪ 중복지원이 발생할 시 입사지원서 접수 마감일 또는 상기의 채용공고 게시"
+   },
+   {
+    "concept": "가점중복",
+    "page": 4,
+    "size": 14.0,
+    "rel_size": 1.1,
+    "y": 0.501,
+    "hidden_mark": true,
+    "matched": [
+     "가점"
+    ],
+    "text": "○ 국가 보훈 대상(각 전형 만점의 5% 또는 10% 가점), 장애인(각 전형 만점의"
+   },
+   {
+    "concept": "필수와우대",
+    "page": 4,
+    "size": 12.9,
+    "rel_size": 0.0,
+    "y": 0.527,
+    "hidden_mark": false,
+    "matched": [
+     "우대"
+    ],
+    "text": "5% 가점)은 관계 법령 및 내규에 근거하여 우대하며, 중복되는 경우 지원자에게"
+   },
+   {
+    "concept": "가점중복",
+    "page": 4,
+    "size": 12.9,
+    "rel_size": 0.0,
+    "y": 0.527,
+    "hidden_mark": false,
+    "matched": [
+     "가점",
+     "중복"
+    ],
+    "text": "5% 가점)은 관계 법령 및 내규에 근거하여 우대하며, 중복되는 경우 지원자에게"
+   },
+   {
+    "concept": "자격기준일",
+    "page": 4,
+    "size": 14.0,
+    "rel_size": 1.1,
+    "y": 0.582,
+    "hidden_mark": false,
+    "matched": [
+     "마감일 기준"
+    ],
+    "text": "○ 정규직, 무기계약직 등 정년이 정해져 있는 분야의 경우, 공고마감일 기준"
+   },
+   {
+    "concept": "자격기준일",
+    "page": 4,
+    "size": 14.0,
+    "rel_size": 1.1,
+    "y": 0.639,
+    "hidden_mark": false,
+    "matched": [
+     "마감일 기준"
+    ],
+    "text": "○ 남자인 경우, 공고마감일 기준 병역필 또는 면제자만 지원할 수 있습니다."
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 4,
+    "size": 12.9,
+    "rel_size": 0.0,
+    "y": 0.723,
+    "hidden_mark": false,
+    "matched": [
+     "발급"
+    ],
+    "text": "면허증, 주민등록증발급확인서, 장애인복지카드, 국가유공자증, 정부 24 모바일"
+   },
+   {
+    "concept": "서류리드타임",
+    "page": 5,
+    "size": 12.9,
+    "rel_size": 0.0,
+    "y": 0.806,
+    "hidden_mark": false,
+    "matched": [
+     "제출서류"
+    ],
+    "text": "보 보호법」에 따라 제출서류 일체를 파기합니다."
+   },
+   {
+    "concept": "필수와우대",
+    "page": 6,
+    "size": 11.0,
+    "rel_size": -1.9,
+    "y": 0.781,
+    "hidden_mark": false,
+    "matched": [
+     "필수"
+    ],
+    "text": "[필수]"
+   }
+  ],
+  "seq": 296275,
+  "기관": "국립중앙의료원",
+  "제목": "의사직(응급의료정책연구팀) 채용 재공고",
+  "fileNo": "3025156",
+  "sha256": "78c2af5978c9f3082602e93991983268dfa9d908601331f9a53809b5a3581e7a"
+ }
+]
