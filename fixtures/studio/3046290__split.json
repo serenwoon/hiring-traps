@@ -1,0 +1,78 @@
+{
+ "id": "job_eQ3idkrFepUDBuNEPmb9pB",
+ "object": "response",
+ "created_at": 1787634879,
+ "status": "completed",
+ "background": false,
+ "error": null,
+ "incomplete_details": null,
+ "instructions": null,
+ "max_output_tokens": null,
+ "model": "agt_hUqujm7jABXb6XBSoUd9RU",
+ "output": [
+  {
+   "id": "84683509-44db-5553-8850-ae4e23822c7c",
+   "type": "message",
+   "status": "completed",
+   "created_at": 1787635082,
+   "updated_at": 1787635082,
+   "is_deleted": false,
+   "model": "m",
+   "response_id": null,
+   "db_type": null,
+   "raw_content": null,
+   "content_parsed": null,
+   "task": null,
+   "sources_raw": null,
+   "sources": null,
+   "additional_values_raw": null,
+   "additional_values": null,
+   "llm": null,
+   "tool_call_id": null,
+   "tool_calls_raw": null,
+   "tool_calls": null,
+   "role": "assistant",
+   "content": [
+    {
+     "type": "output_text",
+     "text": "{\"merge_step_name\": \"m\", \"merge_group_id\": \"2c8798aa-71ce-5788-bb1f-6dd5318cd908:m\", \"count\": 1, \"candidate_count\": 1, \"arrived_count\": 1, \"skipped_count\": 0, \"source_steps\": [{\"branch_key\": \"0:HIRING_NOTICE\", \"step_name\": \"step_3_extract_traps\", \"step_type\": \"information-extract\"}], \"branch_keys\": [\"0:HIRING_NOTICE\"], \"skipped_branch_keys\": [], \"page_ranges\": [{\"branch_key\": \"0:HIRING_NOTICE\", \"ranges\": [[1, 15]], \"scope\": \"ranges\"}], \"source_result_ids\": [{\"branch_key\": \"0:HIRING_NOTICE\", \"result_id\": \"bbc251c0-8563-58a0-a55c-253f20fdbd1e\"}]}",
+     "annotations": [],
+     "additional_values": "{\"previous_step_name\": \"step_3_extract_traps\", \"step_run_id\": \"84683509-44db-5553-8850-ae4e23822c7c\", \"occurrence_id\": \"84683509-44db-5553-8850-ae4e23822c7c\", \"job_execution_id\": \"job_eQ3idkrFepUDBuNEPmb9pB\", \"cache_hit\": false}"
+    }
+   ],
+   "progress": null
+  }
+ ],
+ "parallel_tool_calls": true,
+ "previous_response_id": null,
+ "prompt_cache_key": null,
+ "reasoning": null,
+ "safety_identifier": null,
+ "service_tier": "default",
+ "store": true,
+ "temperature": 1.0,
+ "text": {
+  "format": {
+   "type": "text"
+  }
+ },
+ "tool_choice": "auto",
+ "tools": [],
+ "top_logprobs": 0,
+ "top_p": 1,
+ "truncation": "disabled",
+ "usage": {
+  "input_tokens": 76352,
+  "output_tokens": 22873,
+  "total_tokens": 99225
+ },
+ "user": null,
+ "metadata": {
+  "source": "api"
+ },
+ "conversation": null,
+ "query": "",
+ "is_deleted": false,
+ "expires_at": null,
+ "search_projection_state": "ready"
+}
