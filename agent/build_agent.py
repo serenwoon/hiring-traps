@@ -40,7 +40,10 @@ EXTRACT_SCHEMA = {
             "description": "자격 항목을 한 줄에 하나씩",
             "items": {"type": "object", "properties": {
                 "item": {"type": "string", "description": "자격 조건 원문"},
-                "kind": {"type": "string", "description": "REQUIRED(못 갖추면 지원 불가) · PREFERRED(가점·우대) · UNCLEAR(문서만으로 못 가름) 중 하나"},
+                # 🔴 판정(kind)을 뺐다. 모델에게 뽑기와 판정을 같이 시키면 둘 다 나빠진다
+                #    (2026-08-25: 절차를 줬더니 대조는 했는데 항목 22개를 버렸다).
+                #    어느 절에서 왔는지만 받고 판정은 뒤에서 코드와 Solar 가 한다.
+                "section": {"type": "string", "description": "이 항목이 적힌 절 제목 그대로. 예 「응시자격」 「우대사항」 「특전」 「가점」"},
                 "quote": {"type": "string"},
                 "source_page": {"type": "integer"}}}},
         # 해양환경공단은 합산에 상한 10%, 소상공인시장진흥공단은 택일이었다. 정반대라 열거값으로 둔다.
@@ -105,27 +108,16 @@ date_bases 는 시점이 여러 개면 여러 줄로 뽑는다. 연령은 임용
 자격·면허는 접수마감일 기준인 문서가 실제로 있다. 하나로 합치지 않는다.
 
 requirements 에는 문서에 있는 자격 항목을 **빠짐없이** 넣는다. 응시자격·지원자격
-절의 모든 줄, 우대사항 절의 모든 줄이 대상이다. 근무 형태 조건, 병역, 졸업 여부,
-정년 같은 것도 자격 항목이다.
+절의 모든 줄, 우대사항·가점·특전 절의 모든 줄이 대상이다. 근무 형태 조건, 병역,
+졸업 여부, 정년 같은 것도 자격 항목이다.
 
-다 넣은 다음에 kind 만 다시 본다. 항목을 빼는 단계가 아니다.
-
-kind 를 정하는 순서는 이렇다.
-첫째, 기본값은 그 항목이 적힌 절을 따른다. 응시자격 절이면 REQUIRED,
-우대사항·가점 절이면 PREFERRED 다.
-둘째, 같은 대상이 양쪽 절에 다 있는지 본다. 낱말이 같으면 같은 대상으로 본다.
-쪽이 달라도 마찬가지다 — 1쪽 응시자격과 3쪽 우대사항은 흔한 배치다.
-셋째, 양쪽에 있으면 UNCLEAR 로 바꾸고 quote 에 두 자리를 모두 옮긴다.
-넷째, 단 문서가 그 겹침을 이미 정리해 놓았으면 UNCLEAR 가 아니다. 「이 전형에서는
-해당 가점을 적용하지 않는다」처럼 적어 둔 줄이 있으면 문서가 답한 것이다.
-그때는 절을 따라 REQUIRED 로 둔다.
-
-이 대조를 건너뛰면 지원자가 없는 가점을 계산에 넣는다. 제한경쟁 전형에서
-지원자 전원이 갖춘 자격을 우대라고 적어둔 문서가 실제로 있다.
+필수인지 우대인지는 **판정하지 마라.** 그 항목이 적힌 절 제목을 section 에 그대로
+옮기면 된다. 판정은 뒤 단계가 한다. 여기서 판정까지 하려 들면 뽑기가 나빠진다.
 
 bonus_stacking 의 rule 은 SUM 과 CHOOSE_ONE 을 헷갈리지 않는다. 「중복될 경우
 합산」과 「중복될 경우 가장 높은 것 하나」는 정반대다. 가점 항목은 있는데 중복
-규칙이 없으면 UNCLEAR 다. 「중복지원 불가」는 가점과 무관하니 여기 넣지 않는다."""
+규칙이 없으면 UNCLEAR 다. 「중복지원 불가」는 가점과 무관하니 여기 넣지 않는다.
+"""
 
 
 def steps():
@@ -156,6 +148,22 @@ def steps():
                   "user_system_prompt": EXTRACT_PROMPT},
          "next_steps": []},
     ]
+
+
+def steps_extract_only(parse_fixed=True):
+    """분류 없는 판. parse -> extract 만.
+
+    🔴 조각내서 넣을 때 필요하다. 조각마다 분류를 다시 태우면 표제와 모집분야가
+    없는 뒷조각이 전부 OTHER_REVIEW_REQUIRED 로 거절된다 (2026-08-25: 다섯 조각
+    중 셋이 그렇게 죽었다). 분류는 원본으로 한 번만 하고 조각은 추출만 태운다.
+    """
+    s = steps()
+    parse, extract = s[0], s[2]
+    parse["next_steps"] = [{"step_name": extract["name"], "condition": None}]
+    if parse_fixed:
+        # ② 에서 토큰 편차를 34% 에서 2% 로 줄인 설정
+        parse["data"].update({"ocr": "skip", "merge_multipage_tables": False})
+    return [parse, extract]
 
 
 if __name__ == "__main__":
