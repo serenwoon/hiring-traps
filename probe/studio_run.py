@@ -79,6 +79,7 @@ def poll(job_id, key, every=10, cap=40):
 
 def main():
     pdf, agent_id = sys.argv[1], sys.argv[2]
+    tag = sys.argv[3] if len(sys.argv) > 3 else agent_id[-8:]
     key = api_key()
     t0 = time.time()
     f = upload(pdf, key)
@@ -88,7 +89,7 @@ def main():
     done = poll(job["id"], key)
     out = Path("fixtures/studio")
     out.mkdir(parents=True, exist_ok=True)
-    dest = out / f"{Path(pdf).stem}__{agent_id[-8:]}.json"
+    dest = out / f"{Path(pdf).stem}__{tag}.json"
     with io.open(dest, "w", encoding="utf-8", newline="\n") as fh:
         json.dump(done, fh, ensure_ascii=False, indent=1)
     print(f"\n{time.time() - t0:.0f}초 · status={done.get('status')} -> {dest}")

@@ -9,6 +9,7 @@ import json
 import sys
 import urllib.error
 import urllib.request
+from pathlib import Path
 
 for _s in (sys.stdout, sys.stderr):
     if hasattr(_s, "reconfigure"):
@@ -41,16 +42,26 @@ def call(path, payload=None, method=None, k=None):
 def main():
     k = key()
     doc = json.load(io.open("agent/hiring-traps.json", encoding="utf-8"))
-    agent = call("/agents", {"name": doc["name"], "description": doc["description"]},
-                 method="POST", k=k)
-    print("에이전트", agent["id"])
+    # 이미 올린 에이전트가 있으면 설정만 얹는다. 설정을 갈아끼우면 같은 문서로
+    # 앞 판과 뒤 판을 견줄 수 있다 -- 프롬프트를 고쳤을 때 그게 효과가 있었는지
+    # 재려면 이 비교가 있어야 한다.
+    prev = Path("agent/deployed.json")
+    if prev.exists():
+        rec = json.load(io.open(prev, encoding="utf-8"))
+        agent = {"id": rec["agent_id"]}
+        print("기존 에이전트에 설정 추가", agent["id"])
+    else:
+        agent = call("/agents", {"name": doc["name"], "description": doc["description"]},
+                     method="POST", k=k)
+        print("에이전트", agent["id"])
+    n = len(call(f"/agents/{agent['id']}/configs", method="GET", k=k).get("data", [])) + 1
     cfg = call(f"/agents/{agent['id']}/configs",
-               {"name": "Config #1", "steps": doc["steps"], "is_default": True},
+               {"name": f"Config #{n}", "steps": doc["steps"], "is_default": True},
                method="POST", k=k)
     print("설정    ", cfg.get("id"), "steps", len(cfg.get("steps", [])))
     io.open("agent/deployed.json", "w", encoding="utf-8", newline="\n").write(
         json.dumps({"agent_id": agent["id"], "config_id": cfg.get("id"),
-                    "name": doc["name"], "올린날": "2026-08-25"},
+                    "config_name": cfg.get("name"), "name": doc["name"], "올린날": "2026-08-25"},
                    ensure_ascii=False, indent=1))
     print("-> agent/deployed.json")
 
