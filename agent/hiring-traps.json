@@ -172,6 +172,29 @@
           }
          }
         },
+        "post_result_deadlines": {
+         "type": "array",
+         "description": "합격자 발표 뒤에 지원자가 지켜야 하는 기한. 이의제기, 채용서류 반환 청구, 임용 포기·등록 통보처럼 결과가 난 다음에 걸리는 것만",
+         "items": {
+          "type": "object",
+          "properties": {
+           "what": {
+            "type": "string",
+            "description": "무엇에 대한 기한인가. 예 「이의제기」 「채용서류 반환 청구」 「임용 등록」"
+           },
+           "deadline": {
+            "type": "string",
+            "description": "기한 원문. 예 「채용 여부 확정일 이후 14일 이내」. 날짜로 못 바꿔도 그대로"
+           },
+           "quote": {
+            "type": "string"
+           },
+           "source_page": {
+            "type": "integer"
+           }
+          }
+         }
+        },
         "documents": {
          "type": "array",
          "description": "제출서류를 한 줄에 하나씩",
@@ -224,6 +247,10 @@
       },
       {
        "name": "bonus_conditions",
+       "source": "root"
+      },
+      {
+       "name": "post_result_deadlines",
        "source": "root"
       },
       {

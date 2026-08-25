@@ -1,0 +1,82 @@
+{
+ "id": "job_iKy5KBarWSZzUkVqDjfrRx",
+ "object": "response",
+ "created_at": 1787637227,
+ "status": "failed",
+ "background": false,
+ "error": {
+  "code": "invalid_request_error",
+  "step": "class_update",
+  "message": "No valid classification samples with Gold revisions found"
+ },
+ "incomplete_details": null,
+ "instructions": null,
+ "max_output_tokens": null,
+ "model": "agt_Ek3qPgY8ZK8SJqgA3YESbd",
+ "output": [
+  {
+   "id": "fde7f207-6678-5d3a-a42b-b2a84206799f",
+   "type": "message",
+   "status": "failed",
+   "created_at": 1787637228,
+   "updated_at": 1787637228,
+   "is_deleted": false,
+   "model": "u",
+   "response_id": null,
+   "db_type": null,
+   "raw_content": null,
+   "content_parsed": null,
+   "task": null,
+   "sources_raw": null,
+   "sources": null,
+   "additional_values_raw": null,
+   "additional_values": null,
+   "llm": null,
+   "tool_call_id": null,
+   "tool_calls_raw": null,
+   "tool_calls": null,
+   "role": "assistant",
+   "content": [
+    {
+     "type": "output_text",
+     "text": "{}",
+     "annotations": [],
+     "additional_values": "{}"
+    }
+   ],
+   "progress": null
+  }
+ ],
+ "parallel_tool_calls": true,
+ "previous_response_id": null,
+ "prompt_cache_key": null,
+ "reasoning": null,
+ "safety_identifier": null,
+ "service_tier": "default",
+ "store": true,
+ "temperature": 1.0,
+ "text": {
+  "format": {
+   "type": "text"
+  }
+ },
+ "tool_choice": "auto",
+ "tools": [],
+ "top_logprobs": 0,
+ "top_p": 1,
+ "truncation": "disabled",
+ "usage": {
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "total_tokens": 0
+ },
+ "user": null,
+ "metadata": {
+  "source": "api"
+ },
+ "conversation": null,
+ "query": "",
+ "is_deleted": false,
+ "expires_at": null,
+ "search_projection_state": "not_applicable"
+}

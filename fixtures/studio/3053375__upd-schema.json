@@ -1,0 +1,78 @@
+{
+ "id": "job_NfwXP9xkXZcsB9gxYJzpEP",
+ "object": "response",
+ "created_at": 1787637193,
+ "status": "completed",
+ "background": false,
+ "error": null,
+ "incomplete_details": null,
+ "instructions": null,
+ "max_output_tokens": null,
+ "model": "agt_gzESdE4TVAXcEkMVG5PSs3",
+ "output": [
+  {
+   "id": "ceb72382-5ded-5b09-b9da-06e3d5b010b9",
+   "type": "message",
+   "status": "completed",
+   "created_at": 1787637217,
+   "updated_at": 1787637217,
+   "is_deleted": false,
+   "model": "u",
+   "response_id": null,
+   "db_type": null,
+   "raw_content": null,
+   "content_parsed": null,
+   "task": null,
+   "sources_raw": null,
+   "sources": null,
+   "additional_values_raw": null,
+   "additional_values": null,
+   "llm": null,
+   "tool_call_id": null,
+   "tool_calls_raw": null,
+   "tool_calls": null,
+   "role": "assistant",
+   "content": [
+    {
+     "type": "output_text",
+     "text": "{\"type\": \"json_schema\", \"name\": \"document_schema\", \"schema\": {\"type\": \"object\", \"properties\": {\"date_bases\": {\"type\": \"array\", \"description\": \"응시자격·가점을 언제 시점으로 판단하는지 정한 조항. 항목마다 시점이 다르면 다른 줄로 뽑는다\", \"items\": {\"type\": \"object\", \"properties\": {\"applies_to\": {\"type\": \"string\", \"description\": \"이 시점이 걸리는 대상. 연령·자격/면허·학력·병역·경력·가점 등 문서가 쓴 말 그대로\"}, \"basis\": {\"type\": \"string\", \"description\": \"시점 원문. 예 「접수마감일 기준」 「임용예정일 기준」 「공고일 현재」\"}, \"quote\": {\"type\": \"string\", \"description\": \"그 시점이 적힌 줄 전체를 그대로. 줄이지 않는다\"}, \"source_page\": {\"type\": \"integer\", \"description\": \"인쇄된 쪽 번호. 확정 못 하면 0\"}}}}, \"requirements\": {\"type\": \"array\", \"description\": \"자격 항목을 한 줄에 하나씩\", \"items\": {\"type\": \"object\", \"properties\": {\"item\": {\"type\": \"string\", \"description\": \"자격 조건 원문\"}, \"section\": {\"type\": \"string\", \"description\": \"이 항목이 속한 큰 절 이름. 「응시자격」 「지원자격」 「우대사항」 「특전」 「가점」 중 가장 가까운 것 하나. 「※ 참고」나 「(인사규정 제13조)」 같은 작은 제목이 아니라 그것을 품고 있는 큰 절을 적는다\"}, \"quote\": {\"type\": \"string\"}, \"source_page\": {\"type\": \"integer\"}}}}, \"bonus_stacking\": {\"type\": \"array\", \"description\": \"가점이 여러 개 해당될 때의 처리. 전형·분야별로 규칙이 다르면 여러 줄로\", \"items\": {\"type\": \"object\", \"properties\": {\"applies_to\": {\"type\": \"string\", \"description\": \"이 규칙이 걸리는 전형·분야. 전체면 빈 문자열\"}, \"rule\": {\"type\": \"string\", \"description\": \"SUM(합산) · CHOOSE_ONE(가장 높은 것 하나) · NONE(가점 제도 없음) · UNCLEAR(가점은 있는데 규칙이 없다) 중 하나\"}, \"cap\": {\"type\": \"string\", \"description\": \"상한 원문. 예 「각 채용단계별 만점의 10% 이내」. 없으면 빈 문자열\"}, \"quote\": {\"type\": \"string\"}, \"source_page\": {\"type\": \"integer\"}}}}, \"bonus_conditions\": {\"type\": \"array\", \"description\": \"가점을 받으려면 지원자가 해야 하는 일. 날짜가 아닌 조건만\", \"items\": {\"type\": \"object\", \"properties\": {\"condition\": {\"type\": \"string\", \"description\": \"예 「입사지원서에 해당 정보를 입력해야 함」 「증명서 제출처를 기관명으로 명시」\"}, \"quote\": {\"type\": \"string\"}, \"source_page\": {\"type\": \"integer\"}}}}, \"post_result_deadlines\": {\"type\": \"array\", \"description\": \"합격자 발표 뒤에 지원자가 지켜야 하는 기한. 이의제기, 채용서류 반환 청구, 임용 포기·등록 통보처럼 결과가 난 다음에 걸리는 것만\", \"items\": {\"type\": \"object\", \"properties\": {\"what\": {\"type\": \"string\", \"description\": \"무엇에 대한 기한인가. 예 「이의제기」 「채용서류 반환 청구」 「임용 등록」\"}, \"deadline\": {\"type\": \"string\", \"description\": \"기한 원문. 예 「채용 여부 확정일 이후 14일 이내」. 날짜로 못 바꿔도 그대로\"}, \"quote\": {\"type\": \"string\"}, \"source_page\": {\"type\": \"integer\"}}}}, \"documents\": {\"type\": \"array\", \"description\": \"제출서류를 한 줄에 하나씩\", \"items\": {\"type\": \"object\", \"properties\": {\"name\": {\"type\": \"string\", \"description\": \"서류 이름. 문서에 적힌 대로\"}, \"issuer_external\": {\"type\": \"string\", \"description\": \"외부 기관에서 발급받아야 하면 YES, 자기 작성 서식이면 NO, 모르면 빈 문자열\"}, \"when\": {\"type\": \"string\", \"description\": \"지원시 · 합격후 · UNCLEAR 중 하나\"}, \"form_constraint\": {\"type\": \"string\", \"description\": \"발급 형식 조건. 예 「문서확인번호가 표기된 증명서」 「원본」. 없으면 빈 문자열\"}, \"quote\": {\"type\": \"string\"}, \"source_page\": {\"type\": \"integer\"}}}}}, \"required\": [], \"additionalProperties\": false}}",
+     "annotations": [],
+     "additional_values": "{\"extraction\": {\"doc_1\": {}}, \"iterations\": [{\"iteration\": 0, \"schema\": {\"type\": \"object\", \"properties\": {\"date_bases\": {\"type\": \"array\", \"description\": \"응시자격·가점을 언제 시점으로 판단하는지 정한 조항. 항목마다 시점이 다르면 다른 줄로 뽑는다\", \"items\": {\"type\": \"object\", \"properties\": {\"applies_to\": {\"type\": \"string\", \"description\": \"이 시점이 걸리는 대상. 연령·자격/면허·학력·병역·경력·가점 등 문서가 쓴 말 그대로\"}, \"basis\": {\"type\": \"string\", \"description\": \"시점 원문. 예 「접수마감일 기준」 「임용예정일 기준」 「공고일 현재」\"}, \"quote\": {\"type\": \"string\", \"description\": \"그 시점이 적힌 줄 전체를 그대로. 줄이지 않는다\"}, \"source_page\": {\"type\": \"integer\", \"description\": \"인쇄된 쪽 번호. 확정 못 하면 0\"}}}}, \"requirements\": {\"type\": \"array\", \"description\": \"자격 항목을 한 줄에 하나씩\", \"items\": {\"type\": \"object\", \"properties\": {\"item\": {\"type\": \"string\", \"description\": \"자격 조건 원문\"}, \"section\": {\"type\": \"string\", \"description\": \"이 항목이 속한 큰 절 이름. 「응시자격」 「지원자격」 「우대사항」 「특전」 「가점」 중 가장 가까운 것 하나. 「※ 참고」나 「(인사규정 제13조)」 같은 작은 제목이 아니라 그것을 품고 있는 큰 절을 적는다\"}, \"quote\": {\"type\": \"string\"}, \"source_page\": {\"type\": \"integer\"}}}}, \"bonus_stacking\": {\"type\": \"array\", \"description\": \"가점이 여러 개 해당될 때의 처리. 전형·분야별로 규칙이 다르면 여러 줄로\", \"items\": {\"type\": \"object\", \"properties\": {\"applies_to\": {\"type\": \"string\", \"description\": \"이 규칙이 걸리는 전형·분야. 전체면 빈 문자열\"}, \"rule\": {\"type\": \"string\", \"description\": \"SUM(합산) · CHOOSE_ONE(가장 높은 것 하나) · NONE(가점 제도 없음) · UNCLEAR(가점은 있는데 규칙이 없다) 중 하나\"}, \"cap\": {\"type\": \"string\", \"description\": \"상한 원문. 예 「각 채용단계별 만점의 10% 이내」. 없으면 빈 문자열\"}, \"quote\": {\"type\": \"string\"}, \"source_page\": {\"type\": \"integer\"}}}}, \"bonus_conditions\": {\"type\": \"array\", \"description\": \"가점을 받으려면 지원자가 해야 하는 일. 날짜가 아닌 조건만\", \"items\": {\"type\": \"object\", \"properties\": {\"condition\": {\"type\": \"string\", \"description\": \"예 「입사지원서에 해당 정보를 입력해야 함」 「증명서 제출처를 기관명으로 명시」\"}, \"quote\": {\"type\": \"string\"}, \"source_page\": {\"type\": \"integer\"}}}}, \"post_result_deadlines\": {\"type\": \"array\", \"description\": \"합격자 발표 뒤에 지원자가 지켜야 하는 기한. 이의제기, 채용서류 반환 청구, 임용 포기·등록 통보처럼 결과가 난 다음에 걸리는 것만\", \"items\": {\"type\": \"object\", \"properties\": {\"what\": {\"type\": \"string\", \"description\": \"무엇에 대한 기한인가. 예 「이의제기」 「채용서류 반환 청구」 「임용 등록」\"}, \"deadline\": {\"type\": \"string\", \"description\": \"기한 원문. 예 「채용 여부 확정일 이후 14일 이내」. 날짜로 못 바꿔도 그대로\"}, \"quote\": {\"type\": \"string\"}, \"source_page\": {\"type\": \"integer\"}}}}, \"documents\": {\"type\": \"array\", \"description\": \"제출서류를 한 줄에 하나씩\", \"items\": {\"type\": \"object\", \"properties\": {\"name\": {\"type\": \"string\", \"description\": \"서류 이름. 문서에 적힌 대로\"}, \"issuer_external\": {\"type\": \"string\", \"description\": \"외부 기관에서 발급받아야 하면 YES, 자기 작성 서식이면 NO, 모르면 빈 문자열\"}, \"when\": {\"type\": \"string\", \"description\": \"지원시 · 합격후 · UNCLEAR 중 하나\"}, \"form_constraint\": {\"type\": \"string\", \"description\": \"발급 형식 조건. 예 「문서확인번호가 표기된 증명서」 「원본」. 없으면 빈 문자열\"}, \"quote\": {\"type\": \"string\"}, \"source_page\": {\"type\": \"integer\"}}}}}, \"required\": [], \"additionalProperties\": false}, \"patches\": [], \"rationale\": \"No schema changes required.\", \"impacted_fields\": [], \"extractions\": {\"doc_1\": {}}, \"success\": true, \"stop_reason\": \"no_targets\", \"mismatches\": []}], \"previous_step_name\": \"step_1_parse\", \"step_run_id\": \"ceb72382-5ded-5b09-b9da-06e3d5b010b9\", \"occurrence_id\": \"ceb72382-5ded-5b09-b9da-06e3d5b010b9\", \"job_execution_id\": \"job_NfwXP9xkXZcsB9gxYJzpEP\", \"cache_hit\": false}"
+    }
+   ],
+   "progress": null
+  }
+ ],
+ "parallel_tool_calls": true,
+ "previous_response_id": null,
+ "prompt_cache_key": null,
+ "reasoning": null,
+ "safety_identifier": null,
+ "service_tier": "default",
+ "store": true,
+ "temperature": 1.0,
+ "text": {
+  "format": {
+   "type": "text"
+  }
+ },
+ "tool_choice": "auto",
+ "tools": [],
+ "top_logprobs": 0,
+ "top_p": 1,
+ "truncation": "disabled",
+ "usage": {
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "total_tokens": 0
+ },
+ "user": null,
+ "metadata": {
+  "source": "api"
+ },
+ "conversation": null,
+ "query": "",
+ "is_deleted": false,
+ "expires_at": null,
+ "search_projection_state": "not_applicable"
+}

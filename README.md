@@ -70,17 +70,41 @@ Studio 는 뽑기만 하고 판정은 뒤에서 한다. 겹침을 찾는 것은 
 
 설계는 [docs/superpowers/specs/2026-08-25-hiring-traps-design.md](docs/superpowers/specs/2026-08-25-hiring-traps-design.md)에 있다.
 
+## 스무 건을 훑은 결과
+
+| 함정 | 문서 수 |
+|---|---|
+| 자격 항목 · 제출서류 | 20/20 · 20/20 |
+| 자격 기준일 | 16/20 |
+| 가점 중복 규칙 | 16/20 |
+| 발표 후 기한 | 15/20 |
+| 가점 조건 | 9/20 |
+
+「발표 후 기한」은 마지막에 넣은 여섯째 함정이다. `schema-generate` 노드를 돌려봤더니 자동 생성 스키마에 이의제기 기한 필드가 있었고 내 다섯 필드에는 없었다. 넣자마자 넷 중 셋꼴로 나온다.
+
+이 수를 두 번 못 박아 둔다. **한 번 돌린 값이다.** 같은 문서를 다시 돌리면 개수가 흔들린다. 그리고 **「있다」이지 「숨어 있다」가 아니다.** 원래 세기로 한 것은 자리가 나쁜 것만인데, 추출 출력에 그 줄이 각주인지 괄호인지가 안 담긴다. 그래서 이 표는 분포이지 함정 개수가 아니다.
+
 ## 돌리는 데 필요한 것
 
-파이썬 3, PyMuPDF, 그리고 Upstage API 키. 키는 `.env`에 `UPSTAGE_API_KEY=`로 넣는다. 받은 PDF는 저장소에 없다. `docs/phase0-manifest.json`에 기관명과 파일 번호와 sha256이 있어 같은 파일을 다시 받을 수 있다.
+파이썬 3, PyMuPDF, 그리고 Upstage API 키.
 
 ```bash
-python probe/collect.py 20      # 표본 수집
-python probe/locate.py          # 함정 후보 줄의 위치
-python probe/studio_run.py fixtures/live/<번호>.pdf <agt_...>
+pip install pymupdf
 ```
 
-윈도우에서 개발했고 맥과 리눅스는 확인하지 않았다.
+키는 `.env`에 `UPSTAGE_API_KEY=`로 넣는다. 이 파일은 저장소에 없다. 받은 PDF도 없다 — `docs/phase0-manifest.json`에 기관명과 파일 번호와 sha256이 있어 같은 파일을 다시 받는다.
+
+```bash
+python probe/collect.py 20                       # 표본을 다시 받는다
+python agent/build_agent.py                      # 정의를 만든다
+python agent/push.py                             # 계정에 올린다
+python probe/studio_run.py fixtures/live/<번호>.pdf <agt_...>
+python probe/judge.py <추출결과 여럿>              # 합치고 판정한다
+```
+
+`agent/deployed.json`에 지금 올라가 있는 에이전트와 설정 ID가 있다. 다른 기기에서는 계정이 같아도 그 ID가 그대로 쓸 수 있다 — 에이전트는 계정에 붙어 있고 기기에 붙어 있지 않다.
+
+윈도우에서 만들었다. 맥에서는 `python`을 `python3`으로 바꾼다. 리눅스는 확인하지 않았다.
 
 ## 라이선스
 

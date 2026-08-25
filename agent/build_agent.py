@@ -67,6 +67,17 @@ EXTRACT_SCHEMA = {
                 "condition": {"type": "string", "description": "예 「입사지원서에 해당 정보를 입력해야 함」 「증명서 제출처를 기관명으로 명시」"},
                 "quote": {"type": "string"},
                 "source_page": {"type": "integer"}}}},
+        # 🔴 여섯째 함정. schema-generate 가 objection_deadline_days 를 내는 걸 보고
+        #    알았다 -- 내 다섯 필드에 없었다. 발표 뒤에 걸리는 기한은 마감 전 준비와
+        #    성질이 다르고, 놓치면 되돌릴 수 없는데 공고 맨 뒤에 한 줄로 붙는다.
+        "post_result_deadlines": {
+            "type": "array",
+            "description": "합격자 발표 뒤에 지원자가 지켜야 하는 기한. 이의제기, 채용서류 반환 청구, 임용 포기·등록 통보처럼 결과가 난 다음에 걸리는 것만",
+            "items": {"type": "object", "properties": {
+                "what": {"type": "string", "description": "무엇에 대한 기한인가. 예 「이의제기」 「채용서류 반환 청구」 「임용 등록」"},
+                "deadline": {"type": "string", "description": "기한 원문. 예 「채용 여부 확정일 이후 14일 이내」. 날짜로 못 바꿔도 그대로"},
+                "quote": {"type": "string"},
+                "source_page": {"type": "integer"}}}},
         # 분당서울대학교병원은 면접 합격자만 서류를 낸다. 마감에서 역산하는 구조가 아니다.
         "documents": {
             "type": "array",
