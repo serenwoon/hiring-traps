@@ -128,7 +128,10 @@ def main(*paths):
         for w in tokens(v["item"]):
             df[w] += 1
     total = max(1, len(bag))
-    common = {w for w, c in df.items() if c / total > 0.10 or c > 4}
+    # 🔴 비율만으로 거르면 항목 수가 줄 때 무너진다. 스키마를 좁혀 자격이 22개에서
+    #    11개가 되자 「장애인」이 3/12=25% 가 되어 흔한 낱말로 버려졌고, 지지 3/3 이던
+    #    진짜 신호가 0건이 됐다. 절대 개수를 같이 걸어 작은 문서를 지킨다.
+    common = {w for w, c in df.items() if c >= 4 and c / total > 0.10}
     print(f"흔해서 버린 낱말 {len(common)}개: {sorted(common)[:10]}")
 
     # 1단계 코드: 겹침 후보

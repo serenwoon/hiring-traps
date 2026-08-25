@@ -1,0 +1,94 @@
+[
+ {
+  "type": "validate",
+  "받아준 data": null,
+  "오류사슬": [
+   "validate step requires a non-empty 'checks' list",
+   "validate step requires a non-empty 'checks' list",
+   "validate step requires a non-empty 'checks' list",
+   "validate step requires a non-empty 'checks' list",
+   "validate step requires a non-empty 'checks' list",
+   "validate step requires a non-empty 'checks' list"
+  ],
+  "멈춘이유": "6회 넘김"
+ },
+ {
+  "type": "match",
+  "받아준 data": null,
+  "오류사슬": [
+   "invalid match config: 2 validation errors for MatchOptions\ncustom_name\n  Field required [type=missing, input_value={'step_type': 'match'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/missing\ntargets\n  Field required [type=missing, input_value={'step_type': '",
+   "invalid match config: 1 validation error for MatchOptions\ntargets\n  Input should be a valid list [type=list_type, input_value='x', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.11/v/list_type"
+  ],
+  "멈춘이유": "필드를 못 읽음"
+ },
+ {
+  "type": "export",
+  "받아준 data": null,
+  "오류사슬": [
+   "invalid Export declaration: 4 validation errors for union[CollectionExportDefinition,HttpExportDefinition]\nCollectionExportDefinition.custom_name\n  Field required [type=missing, input_value={}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/missing\nCollectionEx",
+   "invalid Export declaration: 4 validation errors for union[CollectionExportDefinition,HttpExportDefinition]\nCollectionExportDefinition.collection\n  Input should be a valid dictionary or instance of ExportCollectionDefinition [type=model_type, input_value='x', input_type=str]\n    For further informati"
+  ],
+  "멈춘이유": "필드를 못 읽음"
+ },
+ {
+  "type": "merge",
+  "받아준 data": null,
+  "오류사슬": [
+   "merge requires exactly one split-enabled document-classify step"
+  ],
+  "멈춘이유": "필드를 못 읽음"
+ },
+ {
+  "type": "review",
+  "받아준 data": {},
+  "오류사슬": []
+ },
+ {
+  "type": "instruct",
+  "받아준 data": {},
+  "오류사슬": []
+ },
+ {
+  "type": "class-generate",
+  "받아준 data": {},
+  "오류사슬": []
+ },
+ {
+  "type": "class-update",
+  "받아준 data": {},
+  "오류사슬": []
+ },
+ {
+  "type": "schema-generate",
+  "받아준 data": {},
+  "오류사슬": []
+ },
+ {
+  "type": "schema-update",
+  "받아준 data": {},
+  "오류사슬": []
+ },
+ {
+  "type": "instruct-generate",
+  "받아준 data": {},
+  "오류사슬": []
+ },
+ {
+  "type": "document-classify",
+  "받아준 data": {},
+  "오류사슬": []
+ },
+ {
+  "type": "document-parse",
+  "받아준 data": {},
+  "오류사슬": []
+ },
+ {
+  "type": "information-extract",
+  "받아준 data": null,
+  "오류사슬": [
+   "Invalid Search Collection output: structured Extract output requires a deterministic JSON schema"
+  ],
+  "멈춘이유": "필드를 못 읽음"
+ }
+]
