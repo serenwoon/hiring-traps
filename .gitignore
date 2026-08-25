@@ -5,3 +5,5 @@ __pycache__/
 *.pyc
 .venv/
 fixtures/live/
+# 원본을 쪼갠 조각도 PDF 다. live/ 만 막고 여기를 안 막아서 다섯 개가 커밋됐다.
+fixtures/chunks/

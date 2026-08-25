@@ -9,10 +9,10 @@
    "data": {
     "model": "document-parse",
     "mode": "auto",
-    "ocr": "auto",
+    "ocr": "skip",
     "chart_recognition": false,
     "coordinates": true,
-    "merge_multipage_tables": true,
+    "merge_multipage_tables": false,
     "output_formats": [
      "html",
      "text"

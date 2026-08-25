@@ -123,9 +123,12 @@ bonus_stacking 의 rule 은 SUM 과 CHOOSE_ONE 을 헷갈리지 않는다. 「�
 def steps():
     return [
         {"name": "step_1_parse", "type": "document-parse", "is_first": True,
-         "data": {"model": "document-parse", "mode": "auto", "ocr": "auto",
+         # 🔴 ocr 를 auto 로 두면 안 된다. 텍스트가 한 글자도 다르지 않고 바이트만
+         #    다른 파일 두 개에서 토큰이 34% 갈렸다(95,383 대 127,635). 고정하니
+         #    2% 로 줄었다 -- docs/tuning.md ②. 편차의 가장 큰 원인이었고 값은 공짜다.
+         "data": {"model": "document-parse", "mode": "auto", "ocr": "skip",
                   "chart_recognition": False, "coordinates": True,
-                  "merge_multipage_tables": True, "output_formats": ["html", "text"],
+                  "merge_multipage_tables": False, "output_formats": ["html", "text"],
                   "base64_encoding": ["figure"]},
          "next_steps": [{"step_name": "step_2_classify", "condition": None}]},
         {"name": "step_2_classify", "type": "document-classify", "is_first": False,
@@ -160,9 +163,8 @@ def steps_extract_only(parse_fixed=True):
     s = steps()
     parse, extract = s[0], s[2]
     parse["next_steps"] = [{"step_name": extract["name"], "condition": None}]
-    if parse_fixed:
-        # ② 에서 토큰 편차를 34% 에서 2% 로 줄인 설정
-        parse["data"].update({"ocr": "skip", "merge_multipage_tables": False})
+    if not parse_fixed:                    # 기본이 고정이다. 되돌리고 싶을 때만 쓴다
+        parse["data"].update({"ocr": "auto", "merge_multipage_tables": True})
     return [parse, extract]
 
 
