@@ -1,0 +1,247 @@
+{
+ "name": "hiring-traps",
+ "description": "공공기관 채용공고에서 놓치기 쉬운 조항을 뽑는다",
+ "steps": [
+  {
+   "name": "step_1_parse",
+   "type": "document-parse",
+   "is_first": true,
+   "data": {
+    "model": "document-parse",
+    "mode": "auto",
+    "ocr": "auto",
+    "chart_recognition": false,
+    "coordinates": true,
+    "merge_multipage_tables": true,
+    "output_formats": [
+     "html",
+     "text"
+    ],
+    "base64_encoding": [
+     "figure"
+    ]
+   },
+   "next_steps": [
+    {
+     "step_name": "step_2_classify",
+     "condition": null
+    }
+   ]
+  },
+  {
+   "name": "step_2_classify",
+   "type": "document-classify",
+   "is_first": false,
+   "data": {
+    "text": {
+     "format": {
+      "name": "document-classify",
+      "type": "json_schema",
+      "schema": {
+       "type": "string",
+       "oneOf": [
+        {
+         "const": "HIRING_NOTICE",
+         "description": "공공기관·공기업의 직원 채용 공고문. 모집분야, 응시자격, 전형절차, 제출서류가 적혀 있다. 표제가 「채용 공고」·「모집 공고」·「신규채용」 계열이다"
+        },
+        {
+         "const": "OTHER_REVIEW_REQUIRED",
+         "description": "채용공고문이 아닌 것. 직무기술서(NCS 기반 포함), 입사지원 서식·양식, 가점 기준 안내문, 제안요청서 등. 채용과 관련 있어도 공고문 본문이 아니면 여기다"
+        }
+       ]
+      }
+     }
+    },
+    "user_system_prompt": "이 Agent 는 공공기관 채용공고에서 지원자가 놓치기 쉬운 조항을 뽑는다.\n먼저 입력 문서가 채용공고문 본문인지 가른다.\n\n표제를 먼저 본다. 「채용 공고」·「모집 공고」·「신규채용」 계열이고 모집분야와\n응시자격과 전형절차가 있으면 HIRING_NOTICE 다.\n\n직무기술서는 채용공고문이 아니다. NCS 기반 직무기술서, 입사지원 서식, 가점 기준\n안내문처럼 채용과 관련은 있으나 공고문 본문이 아닌 것은 전부 OTHER_REVIEW_REQUIRED 다.\n채용 절차 전체가 아니라 한 직무의 능력단위만 서술하고 있으면 직무기술서다.\n\n애매하면 OTHER_REVIEW_REQUIRED 로 보낸다. 아닌 문서를 채용공고로 읽으면 뒤 단계가\n없는 값을 지어낸다."
+   },
+   "next_steps": [
+    {
+     "step_name": "step_3_extract_traps",
+     "condition": {
+      "field": "text",
+      "operator": "==",
+      "value": "HIRING_NOTICE"
+     }
+    }
+   ]
+  },
+  {
+   "name": "step_3_extract_traps",
+   "type": "information-extract",
+   "is_first": false,
+   "data": {
+    "custom_name": "extract_hiring_traps",
+    "text": {
+     "format": {
+      "name": "document-schema",
+      "type": "json_schema",
+      "schema": {
+       "type": "object",
+       "properties": {
+        "date_bases": {
+         "type": "array",
+         "description": "응시자격·가점을 언제 시점으로 판단하는지 정한 조항. 항목마다 시점이 다르면 다른 줄로 뽑는다",
+         "items": {
+          "type": "object",
+          "properties": {
+           "applies_to": {
+            "type": "string",
+            "description": "이 시점이 걸리는 대상. 연령·자격/면허·학력·병역·경력·가점 등 문서가 쓴 말 그대로"
+           },
+           "basis": {
+            "type": "string",
+            "description": "시점 원문. 예 「접수마감일 기준」 「임용예정일 기준」 「공고일 현재」"
+           },
+           "quote": {
+            "type": "string",
+            "description": "그 시점이 적힌 줄 전체를 그대로. 줄이지 않는다"
+           },
+           "source_page": {
+            "type": "integer",
+            "description": "인쇄된 쪽 번호. 확정 못 하면 0"
+           }
+          }
+         }
+        },
+        "requirements": {
+         "type": "array",
+         "description": "자격 항목을 한 줄에 하나씩",
+         "items": {
+          "type": "object",
+          "properties": {
+           "item": {
+            "type": "string",
+            "description": "자격 조건 원문"
+           },
+           "kind": {
+            "type": "string",
+            "description": "REQUIRED(못 갖추면 지원 불가) · PREFERRED(가점·우대) · UNCLEAR(문서만으로 못 가름) 중 하나"
+           },
+           "quote": {
+            "type": "string"
+           },
+           "source_page": {
+            "type": "integer"
+           }
+          }
+         }
+        },
+        "bonus_stacking": {
+         "type": "array",
+         "description": "가점이 여러 개 해당될 때의 처리. 전형·분야별로 규칙이 다르면 여러 줄로",
+         "items": {
+          "type": "object",
+          "properties": {
+           "applies_to": {
+            "type": "string",
+            "description": "이 규칙이 걸리는 전형·분야. 전체면 빈 문자열"
+           },
+           "rule": {
+            "type": "string",
+            "description": "SUM(합산) · CHOOSE_ONE(가장 높은 것 하나) · NONE(가점 제도 없음) · UNCLEAR(가점은 있는데 규칙이 없다) 중 하나"
+           },
+           "cap": {
+            "type": "string",
+            "description": "상한 원문. 예 「각 채용단계별 만점의 10% 이내」. 없으면 빈 문자열"
+           },
+           "quote": {
+            "type": "string"
+           },
+           "source_page": {
+            "type": "integer"
+           }
+          }
+         }
+        },
+        "bonus_conditions": {
+         "type": "array",
+         "description": "가점을 받으려면 지원자가 해야 하는 일. 날짜가 아닌 조건만",
+         "items": {
+          "type": "object",
+          "properties": {
+           "condition": {
+            "type": "string",
+            "description": "예 「입사지원서에 해당 정보를 입력해야 함」 「증명서 제출처를 기관명으로 명시」"
+           },
+           "quote": {
+            "type": "string"
+           },
+           "source_page": {
+            "type": "integer"
+           }
+          }
+         }
+        },
+        "documents": {
+         "type": "array",
+         "description": "제출서류를 한 줄에 하나씩",
+         "items": {
+          "type": "object",
+          "properties": {
+           "name": {
+            "type": "string",
+            "description": "서류 이름. 문서에 적힌 대로"
+           },
+           "issuer_external": {
+            "type": "string",
+            "description": "외부 기관에서 발급받아야 하면 YES, 자기 작성 서식이면 NO, 모르면 빈 문자열"
+           },
+           "when": {
+            "type": "string",
+            "description": "지원시 · 합격후 · UNCLEAR 중 하나"
+           },
+           "form_constraint": {
+            "type": "string",
+            "description": "발급 형식 조건. 예 「문서확인번호가 표기된 증명서」 「원본」. 없으면 빈 문자열"
+           },
+           "quote": {
+            "type": "string"
+           },
+           "source_page": {
+            "type": "integer"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "schema_layout": {
+     "version": 1,
+     "columns": [
+      {
+       "name": "date_bases",
+       "source": "root"
+      },
+      {
+       "name": "requirements",
+       "source": "root"
+      },
+      {
+       "name": "bonus_stacking",
+       "source": "root"
+      },
+      {
+       "name": "bonus_conditions",
+       "source": "root"
+      },
+      {
+       "name": "documents",
+       "source": "root"
+      }
+     ]
+    },
+    "location": true,
+    "location_granularity": "all",
+    "confidence": true,
+    "many_rows": true,
+    "many_rows_threshold": 20,
+    "many_rows_max_rows_per_batch": 40,
+    "many_rows_max_concurrent": 5,
+    "user_system_prompt": "입력은 공공기관 채용공고문이다. 문서에 명시된 사실만 뽑는다.\n요약하지 않고, 추측하지 않고, 지원 여부를 판단하지 않는다.\n\n빈 칸 규약이 이 Agent 의 핵심이다. 문서가 정하지 않은 것은 빈 문자열로 둔다.\n0 이나 그럴듯한 기본값으로 채우면 읽는 사람이 그것을 문서에 적힌 사실로 읽는다.\n모르는 것을 모른다고 두는 쪽이 값이 있다.\n\nquote 는 원문 그대로 옮긴다. 띄어쓰기가 없는 문서는 없는 대로 둔다. 다듬으면\n나중에 원문과 대조할 수 없다.\n\ndate_bases 는 시점이 여러 개면 여러 줄로 뽑는다. 연령은 임용예정일 기준인데\n자격·면허는 접수마감일 기준인 문서가 실제로 있다. 하나로 합치지 않는다.\n\nrequirements 의 kind 는 REQUIRED 와 PREFERRED 를 억지로 가르지 않는다. 같은\n자격이 필수 요건이면서 우대 사유로도 적힌 문서가 있다. 그때는 UNCLEAR 다.\n\nbonus_stacking 의 rule 은 SUM 과 CHOOSE_ONE 을 헷갈리지 않는다. 「중복될 경우\n합산」과 「중복될 경우 가장 높은 것 하나」는 정반대다. 가점 항목은 있는데 중복\n규칙이 없으면 UNCLEAR 다. 「중복지원 불가」는 가점과 무관하니 여기 넣지 않는다."
+   },
+   "next_steps": []
+  }
+ ]
+}
