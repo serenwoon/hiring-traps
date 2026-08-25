@@ -1,0 +1,78 @@
+{
+ "id": "job_BnBS7SXsyndYZFEtHADiBE",
+ "object": "response",
+ "created_at": 1787620282,
+ "status": "completed",
+ "background": false,
+ "error": null,
+ "incomplete_details": null,
+ "instructions": null,
+ "max_output_tokens": null,
+ "model": "agt_7Cg3HLb2pggLdpQTUz8doa",
+ "output": [
+  {
+   "id": "e27000de-e442-5f52-9a55-2ec5d4931893",
+   "type": "message",
+   "status": "completed",
+   "created_at": 1787620295,
+   "updated_at": 1787620297,
+   "is_deleted": false,
+   "model": "step_2_classify",
+   "response_id": null,
+   "db_type": null,
+   "raw_content": null,
+   "content_parsed": null,
+   "task": null,
+   "sources_raw": null,
+   "sources": null,
+   "additional_values_raw": null,
+   "additional_values": null,
+   "llm": null,
+   "tool_call_id": null,
+   "tool_calls_raw": null,
+   "tool_calls": null,
+   "role": "assistant",
+   "content": [
+    {
+     "type": "output_text",
+     "text": "OTHER_REVIEW_REQUIRED",
+     "annotations": [],
+     "additional_values": "{\"previous_step_name\": \"step_1_parse\", \"step_run_id\": \"e27000de-e442-5f52-9a55-2ec5d4931893\", \"occurrence_id\": \"e27000de-e442-5f52-9a55-2ec5d4931893\", \"job_execution_id\": \"job_BnBS7SXsyndYZFEtHADiBE\", \"cache_hit\": false, \"document_type\": {\"_value\": \"OTHER_REVIEW_REQUIRED\", \"confidence_score\": 0.99, \"confidence\": \"high\"}, \"hierarchy\": {\"leaf\": \"OTHER_REVIEW_REQUIRED\", \"path\": [\"OTHER_REVIEW_REQUIRED\"], \"depth\": 1}}"
+    }
+   ],
+   "progress": null
+  }
+ ],
+ "parallel_tool_calls": true,
+ "previous_response_id": null,
+ "prompt_cache_key": null,
+ "reasoning": null,
+ "safety_identifier": null,
+ "service_tier": "default",
+ "store": true,
+ "temperature": 1.0,
+ "text": {
+  "format": {
+   "type": "text"
+  }
+ },
+ "tool_choice": "auto",
+ "tools": [],
+ "top_logprobs": 0,
+ "top_p": 1,
+ "truncation": "disabled",
+ "usage": {
+  "input_tokens": 4364,
+  "output_tokens": 80,
+  "total_tokens": 4444
+ },
+ "user": null,
+ "metadata": {
+  "source": "api"
+ },
+ "conversation": null,
+ "query": "",
+ "is_deleted": false,
+ "expires_at": null,
+ "search_projection_state": "ready"
+}
