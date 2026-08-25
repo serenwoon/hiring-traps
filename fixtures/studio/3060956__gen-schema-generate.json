@@ -1,0 +1,78 @@
+{
+ "id": "job_H3xfpuEdkChuMtK6RQe2LA",
+ "object": "response",
+ "created_at": 1787636742,
+ "status": "completed",
+ "background": false,
+ "error": null,
+ "incomplete_details": null,
+ "instructions": null,
+ "max_output_tokens": null,
+ "model": "agt_RDwHUUsWai7XVwQB2TqjCs",
+ "output": [
+  {
+   "id": "6fe8f2c9-7bc1-5cf3-b2bb-e7049d243c90",
+   "type": "message",
+   "status": "completed",
+   "created_at": 1787636743,
+   "updated_at": 1787636767,
+   "is_deleted": false,
+   "model": "g",
+   "response_id": null,
+   "db_type": null,
+   "raw_content": null,
+   "content_parsed": null,
+   "task": null,
+   "sources_raw": null,
+   "sources": null,
+   "additional_values_raw": null,
+   "additional_values": null,
+   "llm": null,
+   "tool_call_id": null,
+   "tool_calls_raw": null,
+   "tool_calls": null,
+   "role": "assistant",
+   "content": [
+    {
+     "type": "output_text",
+     "text": "{\"type\": \"json_schema\", \"name\": \"document_schema\", \"schema\": {\"type\": \"object\", \"properties\": {\"job_posting_title\": {\"type\": \"string\", \"description\": \"Extract the main title of the recruitment notice. Include only the title text itself, excluding section numbers, dates, and issuing authority names.\"}, \"organization_name\": {\"type\": \"string\", \"description\": \"Extract the name of the hiring organization or issuer shown as the announcing institution. Exclude titles of individual signatories unless they are part of the organization name.\"}, \"announcement_date\": {\"type\": \"string\", \"description\": \"Extract the document issuance or announcement date associated with the recruitment notice. Normalize to YYYY-MM-DD when a full date is shown. If the source shows only a partial date, preserve the original visible text.\"}, \"recruitment_positions\": {\"type\": \"array\", \"items\": {\"type\": \"object\", \"properties\": {\"employment_level\": {\"type\": \"string\", \"description\": \"Extract the hiring level or career stage for the position, such as entry-level or experienced, from the recruitment table row. Exclude surrounding labels and brackets.\"}, \"position_name\": {\"type\": \"string\", \"description\": \"Extract the job field or position name from the recruitment table row. Include the visible position wording, including parenthetical qualifiers when they are part of the position name.\"}, \"qualification_grade\": {\"type\": \"string\", \"description\": \"Extract the qualification or grade code for the position from the recruitment table row. Preserve the original code format exactly as shown.\"}, \"recruitment_headcount\": {\"type\": \"integer\", \"description\": \"Extract the number of people to be recruited for the row as an integer. Do not include unit words such as persons.\"}, \"application_requirements\": {\"type\": \"string\", \"description\": \"Extract the eligibility or application requirement text for the position row. Include the full requirement statement content for that row, preserving legal references and qualifiers, but excluding the column header text.\"}}}}, \"recruitment_general_notes\": {\"type\": \"array\", \"description\": \"Extract general recruitment notes or cautions that apply broadly to the hiring notice but are not tied to a single stage row or submitted document item. Return each distinct note item as a separate array element in document order. Exclude statutory disqualification items and stage schedule rows, which are captured elsewhere.\", \"items\": {\"type\": \"string\"}}, \"employment_type\": {\"type\": \"string\", \"description\": \"Extract the employment type stated for the recruited position, such as regular, contract, temporary, or equivalent. Return only the employment type text, excluding surrounding explanatory sentences.\"}, \"probation_period_months\": {\"type\": \"integer\", \"description\": \"Extract the initially stated probation period length in months as an integer when explicitly given. Do not include possible extension months unless they are separately captured elsewhere.\"}, \"probation_extension_months\": {\"type\": \"integer\", \"description\": \"Extract the additional probation extension length in months as an integer when the notice states an extra probation period may be added after the initial period.\"}, \"probation_max_total_months\": {\"type\": \"integer\", \"description\": \"Extract the maximum total probation duration in months as an integer when both initial and extended periods are described.\"}, \"probation_pass_score\": {\"type\": \"number\", \"description\": \"Extract the score threshold required to pass probation evaluation when explicitly stated. Return only the numeric score without the word for points.\"}, \"disqualification_reasons\": {\"type\": \"array\", \"description\": \"Extract each statutory or policy-based disqualification reason for employment listed in the section describing hiring disqualifications. Return one item per listed reason in document order, combining wrapped lines that belong to the same numbered or lettered item. Exclude introductory section labels.\", \"items\": {\"type\": \"string\"}}, \"selection_stages\": {\"type\": \"array\", \"items\": {\"type\": \"object\", \"properties\": {\"stage_name\": {\"type\": \"string\", \"description\": \"Extract the selection stage name from the stage column. Include numbering or substage wording only if visibly part of the stage name cell.\"}, \"stage_schedule\": {\"type\": \"string\", \"description\": \"Extract the schedule text for the stage exactly as shown in the schedule column, preserving date ranges, approximate timing expressions, and symbols.\"}, \"result_announcement_date\": {\"type\": \"string\", \"description\": \"Extract the pass announcement or result announcement text for the stage exactly as shown in the corresponding column. Preserve approximate expressions such as planned or mid-month wording when present.\"}, \"stage_notes\": {\"type\": \"string\", \"description\": \"Extract the remarks or notes for the stage from the remarks column. Preserve the original wording of the note content, excluding the column header.\"}}}}, \"selection_process_notes\": {\"type\": \"array\", \"description\": \"Extract note items listed below the selection process table that explain stage progression, evaluation use, cancellation conditions, or similar process-wide rules. Return one array element per note in document order.\", \"items\": {\"type\": \"string\"}}, \"interview_pass_required_documents\": {\"type\": \"array\", \"description\": \"Extract each required document item that must be submitted by interview passers from the submission documents section. Return one array element per numbered document item in document order. For an item with subordinate examples or alternatives, include them in the same element as part of that item's content.\", \"items\": {\"type\": \"string\"}}, \"interview_pass_document_submission_timing\": {\"type\": \"string\", \"description\": \"Extract the statement describing when interview passers must submit the required documents. Include the timing condition and event reference, but exclude unrelated surrounding instructions.\"}, \"interview_pass_document_submission_instructions\": {\"type\": \"array\", \"description\": \"Extract instruction items related to how interview passers must prepare or label the document submission package, excluding the actual list of required documents. Return each distinct instruction as a separate array element in document order.\", \"items\": {\"type\": \"string\"}}, \"preferential_treatment_targets\": {\"type\": \"array\", \"description\": \"Extract the categories of applicants stated to receive preferential treatment or favorable consideration in the benefits or preference section. Return only the target category labels in document order, without additional commentary.\", \"items\": {\"type\": \"string\"}}, \"salary_annual_amount\": {\"type\": \"number\", \"description\": \"Extract the stated annual salary amount as a number from the miscellaneous or compensation note. Remove currency words, commas, approximation qualifiers, and taxation notes. If the source expresses the amount in ten-thousand-unit notation, convert it to a plain numeric amount in won.\"}, \"salary_notes\": {\"type\": \"string\", \"description\": \"Extract the compensation note associated with salary that explains whether the amount is pre-tax, approximate, or excludes other allowances. Exclude the numeric annual salary itself if captured separately.\"}, \"other_notes\": {\"type\": \"array\", \"description\": \"Extract other important miscellaneous notice items from the general notes or miscellaneous section that are useful for downstream processing, such as assignment changes, candidate pool validity, objections, document return, reserve candidates, cancellation conditions, contact guidance, or website information. Return one item per numbered note in document order. Exclude notes already captured in other dedicated fields.\", \"items\": {\"type\": \"string\"}}, \"objection_deadline_days\": {\"type\": \"integer\", \"description\": \"Extract the number of days allowed for filing an objection after the final successful candidate announcement, as an integer. Do not include the unit word for days.\"}, \"candidate_pool_validity_years\": {\"type\": \"integer\", \"description\": \"Extract the validity period in years for registration as an appointment candidate or candidate pool, as an integer, when explicitly stated.\"}, \"candidate_pool_extension_years\": {\"type\": \"integer\", \"description\": \"Extract the maximum additional extension period in years for candidate pool validity, as an integer, when explicitly stated.\"}, \"inquiry_website_url\": {\"type\": \"string\", \"description\": \"Extract the recruitment website URL provided for additional information or inquiries. Return the URL exactly as shown, excluding surrounding punctuation.\"}}}}",
+     "annotations": [],
+     "additional_values": "{\"previous_step_name\": \"step_1_parse\", \"step_run_id\": \"6fe8f2c9-7bc1-5cf3-b2bb-e7049d243c90\", \"occurrence_id\": \"6fe8f2c9-7bc1-5cf3-b2bb-e7049d243c90\", \"job_execution_id\": \"job_H3xfpuEdkChuMtK6RQe2LA\", \"cache_hit\": false}"
+    }
+   ],
+   "progress": null
+  }
+ ],
+ "parallel_tool_calls": true,
+ "previous_response_id": null,
+ "prompt_cache_key": null,
+ "reasoning": null,
+ "safety_identifier": null,
+ "service_tier": "default",
+ "store": true,
+ "temperature": 1.0,
+ "text": {
+  "format": {
+   "type": "text"
+  }
+ },
+ "tool_choice": "auto",
+ "tools": [],
+ "top_logprobs": 0,
+ "top_p": 1,
+ "truncation": "disabled",
+ "usage": {
+  "input_tokens": 5785,
+  "output_tokens": 1854,
+  "total_tokens": 7639
+ },
+ "user": null,
+ "metadata": {
+  "source": "api"
+ },
+ "conversation": null,
+ "query": "",
+ "is_deleted": false,
+ "expires_at": null,
+ "search_projection_state": "not_applicable"
+}

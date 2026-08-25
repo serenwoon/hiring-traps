@@ -1,0 +1,78 @@
+{
+ "id": "job_2E4NZ9qJkVkz4PqAneZZEq",
+ "object": "response",
+ "created_at": 1787636709,
+ "status": "completed",
+ "background": false,
+ "error": null,
+ "incomplete_details": null,
+ "instructions": null,
+ "max_output_tokens": null,
+ "model": "agt_jKXTQtntswU799daCVQt6P",
+ "output": [
+  {
+   "id": "8e7750b2-059f-5461-a50c-6084859d669c",
+   "type": "message",
+   "status": "completed",
+   "created_at": 1787636721,
+   "updated_at": 1787636730,
+   "is_deleted": false,
+   "model": "g",
+   "response_id": null,
+   "db_type": null,
+   "raw_content": null,
+   "content_parsed": null,
+   "task": null,
+   "sources_raw": null,
+   "sources": null,
+   "additional_values_raw": null,
+   "additional_values": null,
+   "llm": null,
+   "tool_call_id": null,
+   "tool_calls_raw": null,
+   "tool_calls": null,
+   "role": "assistant",
+   "content": [
+    {
+     "type": "output_text",
+     "text": "[{\"const\": \"job_posting_announcement\", \"description\": \"A recruitment or hiring announcement document that outlines an open position, eligibility requirements, hiring stages and schedule, required submission documents, benefits or preferences, and other application instructions. Typically includes headings for recruitment field, qualifications, selection process, and submission requirements in a notice-style layout with tables.\"}]",
+     "annotations": [],
+     "additional_values": "{\"previous_step_name\": \"step_1_parse\", \"step_run_id\": \"8e7750b2-059f-5461-a50c-6084859d669c\", \"occurrence_id\": \"8e7750b2-059f-5461-a50c-6084859d669c\", \"job_execution_id\": \"job_2E4NZ9qJkVkz4PqAneZZEq\", \"cache_hit\": false}"
+    }
+   ],
+   "progress": null
+  }
+ ],
+ "parallel_tool_calls": true,
+ "previous_response_id": null,
+ "prompt_cache_key": null,
+ "reasoning": null,
+ "safety_identifier": null,
+ "service_tier": "default",
+ "store": true,
+ "temperature": 1.0,
+ "text": {
+  "format": {
+   "type": "text"
+  }
+ },
+ "tool_choice": "auto",
+ "tools": [],
+ "top_logprobs": 0,
+ "top_p": 1,
+ "truncation": "disabled",
+ "usage": {
+  "input_tokens": 3562,
+  "output_tokens": 81,
+  "total_tokens": 3643
+ },
+ "user": null,
+ "metadata": {
+  "source": "api"
+ },
+ "conversation": null,
+ "query": "",
+ "is_deleted": false,
+ "expires_at": null,
+ "search_projection_state": "not_applicable"
+}

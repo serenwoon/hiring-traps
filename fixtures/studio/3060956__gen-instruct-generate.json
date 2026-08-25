@@ -1,0 +1,78 @@
+{
+ "id": "job_BGGHBfskhM9Yfv9JVTyisJ",
+ "object": "response",
+ "created_at": 1787636775,
+ "status": "completed",
+ "background": false,
+ "error": null,
+ "incomplete_details": null,
+ "instructions": null,
+ "max_output_tokens": null,
+ "model": "agt_WDRcykNY8Y4HDgZWiYT7QK",
+ "output": [
+  {
+   "id": "3ec7e03a-5a43-5e59-a18f-8b1ceeb3a7e2",
+   "type": "message",
+   "status": "completed",
+   "created_at": 1787636776,
+   "updated_at": 1787636782,
+   "is_deleted": false,
+   "model": "g",
+   "response_id": null,
+   "db_type": null,
+   "raw_content": null,
+   "content_parsed": null,
+   "task": null,
+   "sources_raw": null,
+   "sources": null,
+   "additional_values_raw": null,
+   "additional_values": null,
+   "llm": null,
+   "tool_call_id": null,
+   "tool_calls_raw": null,
+   "tool_calls": null,
+   "role": "assistant",
+   "content": [
+    {
+     "type": "output_text",
+     "text": "{\"candidates\": [{\"query\": \"이 채용공고의 모집 직무, 모집 인원, 자격 등급, 필수 응시요건을 표로 요약하라.\", \"rationale\": \"지원자가 가장 먼저 확인해야 하는 핵심 채용 조건을 한 번에 파악할 수 있어 실용적이다. 모집분야 표에 주요 정보가 구조적으로 제시되어 있어 답변이 명확하다.\", \"category\": \"summary\", \"source_hints\": [\"3\", \"2\"], \"expected_answer_type\": \"table\"}, {\"query\": \"전형단계 및 일정이 단계 순서상 모순 없이 진행되는지 확인하고, 각 단계의 일정·합격자 발표일·비고를 정리하라.\", \"rationale\": \"채용 일정의 선후관계와 발표 시점을 검토하면 지원 준비와 일정 관리에 직접 도움이 된다. 문서에 단계별 일정과 발표일이 표로 제시되어 있어 검증 가능하다.\", \"category\": \"verification\", \"source_hints\": [\"18\", \"19\"], \"expected_answer_type\": \"table\"}, {\"query\": \"이 공고를 기준으로 지원 자격 제한 또는 합격/임용 취소로 이어질 수 있는 사유들을 항목별로 분류해 목록화하라.\", \"rationale\": \"지원 가능 여부와 탈락 리스크를 사전에 판단하는 데 가장 중요한 정보다. 응시요건, 결격사유, 기타 취소 사유가 여러 구역에 흩어져 있어 통합 정리가 가치 있다.\", \"category\": \"classification\", \"source_hints\": [\"7\", \"8\", \"37\"], \"expected_answer_type\": \"markdown\"}]}",
+     "annotations": [],
+     "additional_values": "{\"previous_step_name\": \"step_1_parse\", \"step_run_id\": \"3ec7e03a-5a43-5e59-a18f-8b1ceeb3a7e2\", \"occurrence_id\": \"3ec7e03a-5a43-5e59-a18f-8b1ceeb3a7e2\", \"job_execution_id\": \"job_BGGHBfskhM9Yfv9JVTyisJ\", \"cache_hit\": false}"
+    }
+   ],
+   "progress": null
+  }
+ ],
+ "parallel_tool_calls": true,
+ "previous_response_id": null,
+ "prompt_cache_key": null,
+ "reasoning": null,
+ "safety_identifier": null,
+ "service_tier": "default",
+ "store": true,
+ "temperature": 1.0,
+ "text": {
+  "format": {
+   "type": "text"
+  }
+ },
+ "tool_choice": "auto",
+ "tools": [],
+ "top_logprobs": 0,
+ "top_p": 1,
+ "truncation": "disabled",
+ "usage": {
+  "input_tokens": 4669,
+  "output_tokens": 344,
+  "total_tokens": 5013
+ },
+ "user": null,
+ "metadata": {
+  "source": "api"
+ },
+ "conversation": null,
+ "query": "",
+ "is_deleted": false,
+ "expires_at": null,
+ "search_projection_state": "not_applicable"
+}
