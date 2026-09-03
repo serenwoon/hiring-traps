@@ -10,9 +10,13 @@
 
 파이프라인은 돌아간다. 그런데 도구가 되려면 하나가 더 있어야 한다. **그 줄이 어디에 있었는지** 다. 첫 쪽 요약표에 큰 글씨로 적힌 기준일은 아무도 안 놓친다. 함정이 되려면 각주나 괄호 안이어야 한다.
 
-추출 결과에는 쪽 번호만 오고 그 줄이 각주인지 괄호인지가 안 담긴다. 위치를 재는 코드는 따로 있는데(`probe/locate.py`) 추출 결과와 안 이어져 있다. 그 조각을 안 만들었다.
+추출 결과에는 쪽 번호만 오고 그 줄이 각주인지 괄호인지가 안 담겼다. 위치를 재는 코드는 따로 있는데(`probe/locate.py`) 손으로 만든 어휘 목록으로 줄을 찾아서 추출 결과와 안 이어져 있었다.
 
-그래서 이 저장소가 지금 가진 것은 **분포**다. 그 정보가 문서에 있는지까지고, 숨어 있는지는 아니다. 이름은 그대로 두되 첫 줄을 고쳤다.
+**그 조각은 2026-09-03 에 붙였다**(`probe/where.py`). 이제 인용마다 그 줄의 글자 크기와 세로 위치와 각주 표시가 나온다 — 어휘 목록 없이, 기계가 낸 인용으로.
+
+그런데도 「숨어 있나」에는 아직 못 간다. 작은 글자나 괄호 안이 곧 함정이라는 근거가 없기 때문이다. 그걸 재려면 지원자가 실제로 무엇을 놓쳤는지를 알아야 하고 그 자료가 없다.
+
+그래서 이 저장소가 지금 가진 것은 **분포와 자리**다. 그 정보가 문서에 있는지, 있다면 어디에 있는지까지고, 그 자리가 함정인지는 아니다. 이름은 그대로 두되 첫 줄을 고쳤다.
 
 ## 잰 것 — Studio
 
@@ -80,9 +84,19 @@ parse 가 열아홉인 것은 에이전트마다 하나씩 있기 때문이고, 
 
 한 번 돌린 값이다. 그리고 「있다」이지 「숨어 있다」가 아니다.
 
+## 잰 것 — 인용이 어디에 앉아 있나
+
+원문에 서는 인용 622 칸이 PDF 줄에 어떻게 앉는지 쟀다. 317 칸은 한 줄 안에 통째로 있고 305 칸은 여러 줄에 걸친다.
+
+여기서 손잡이가 셋 더 늘었다 — 걸친 인용의 자리를 첫 줄로 잡을지 가장 작은 줄로 잡을지(두 규칙이 갈리는 것 51 칸), 같은 문장이 여러 곳에 나올 때 어디를 쓸지(34 칸), 한 줄에 들어가는데 이어붙이면 걸치는 경우(2 칸). 전부 고르지 않고 나란히 적었다.
+
+그리고 `probe/locate.py` 가 `hidden_mark` 하나로 묶어 둔 여섯 표시를 갈라 보니 **괄호가 절반이었다.** 622 칸 중 괄호가 312, `※` 가 46, `*` 가 43 이고 괄호밖에 없는 것이 258 칸이다. 괄호는 어느 문서에나 있으니 「숨어 있다」의 근거로는 약하다.
+
+작은 글자나 각주 표시가 곧 함정이라는 근거는 아직 없다. 그걸 재려면 지원자가 실제로 무엇을 놓쳤는지를 알아야 하고 그 자료가 없다. → [docs/where.md](docs/where.md)
+
 ## 안 한 것
 
-위치 판정을 안 붙였다. 사람이 들고 갈 한 장을 만드는 코드도 없다.
+사람이 들고 갈 한 장을 만드는 코드가 없다.
 
 겹침 판정에 오탐이 남아 있다 — 「구조화금융」이 직무명인데 자격 겹침으로 잡혔다. 서류 개수는 파싱을 고정해도 20 · 13 · 17 로 흔든다.
 
@@ -109,6 +123,7 @@ python probe/node_contracts.py                   # 노드 계약을 캔다
 
 ```bash
 python probe/recheck.py                          # 인용이 원문에 서는지 대조한다
+python probe/where.py                            # 그 인용이 어디에 앉아 있는지 본다
 python probe/compare.py                          # 골든셋과 나란히 놓는다
 python probe/locate.py                           # 후보 줄의 위치를 잰다
 ```
@@ -119,7 +134,7 @@ python probe/locate.py                           # 후보 줄의 위치를 잰�
 
 ## 문서
 
-[docs/studio-nodes.md](docs/studio-nodes.md) 노드 열넷의 계약 · [docs/variance.md](docs/variance.md) 편차 세 층 · [docs/tuning.md](docs/tuning.md) 튜닝 네 갈래 · [docs/phase0-notes.md](docs/phase0-notes.md) 세기 전에 틀린 것 · [docs/phase1-comparison.md](docs/phase1-comparison.md) 골든셋 대조 · [docs/labeling-guide.md](docs/labeling-guide.md) 라벨링 기준
+[docs/studio-nodes.md](docs/studio-nodes.md) 노드 열넷의 계약 · [docs/variance.md](docs/variance.md) 편차 세 층 · [docs/tuning.md](docs/tuning.md) 튜닝 네 갈래 · [docs/phase0-notes.md](docs/phase0-notes.md) 세기 전에 틀린 것 · [docs/where.md](docs/where.md) 인용의 자리 · [docs/phase1-comparison.md](docs/phase1-comparison.md) 골든셋 대조 · [docs/labeling-guide.md](docs/labeling-guide.md) 라벨링 기준
 
 설계 문서는 [docs/superpowers/specs/](docs/superpowers/specs/) 에 있고, 지금 저장소와 다른 것을 말한다. 고치지 않고 둔다 — 무엇을 만들려 했는지가 거기 적혀 있다.
 
