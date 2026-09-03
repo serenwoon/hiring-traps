@@ -38,7 +38,7 @@ parse 가 열아홉인 것은 에이전트마다 하나씩 있기 때문이고, 
 
 그중 하나는 내가 놓친 것이었다 — 최종 발표 뒤의 이의제기 기한이다. 넣고 스무 건에 다시 돌리니 열여섯 건에서 나왔다.
 
-## 잰 것 — 편차가 두 층이다
+## 잰 것 — 편차가 어디서 오나
 
 같은 문서를 두 번 돌리면 값이 다르게 나온다. 텍스트가 한 글자도 다르지 않고 바이트만 다른 파일 두 개에서 기준일 개수가 1 과 13 으로 갈렸다.
 
@@ -47,6 +47,10 @@ parse 가 열아홉인 것은 에이전트마다 하나씩 있기 때문이고, 
 그런데 같은 파일을 반복해서 돌릴 때의 흔들림은 그대로 남는다. 자격 항목이 7 과 23 을 오갔다.
 
 두 번째는 모델 탓이 아니라 내 스키마 탓이었다. 「인사규정 결격사유를 자격 항목으로 볼 것인가」를 안 정해줘서 판마다 다르게 정했다. 경계를 명시하니 7 · 6 · 7 로 모였다.
+
+세 번째 층은 성격이 다르다. 추출 결과의 인용이 원본 PDF 에 글자 그대로 서는지 스무 건 793 칸에 대고 대조해봤더니, 못 찾은 칸이 **107 에서 550 사이**를 오갔다. 대조 전에 무엇을 지우는지와 fitz 에게 쪽을 어떤 순서로 읽게 하는지, 내가 고르는 것 둘에 따라 움직인다. 어느 칸도 정확도라고 부르지 못했다.
+
+**이 수는 모델이 인용을 안 지킨 비율이 아니다.** 대조 대상인 fitz 텍스트도 원문이 아니라 두 번째 추출기의 출력이라, 둘이 다를 때 어느 쪽이 원문인지 이 대조는 모른다. 여덟 칸 전부와 근거는 [docs/variance.md](docs/variance.md) 「세 번째 층」에 있다.
 
 ## 잰 것 — 억지로 답하지 않는다
 
@@ -101,13 +105,21 @@ python probe/judge.py <추출결과 여럿>              # 합치고 판정한�
 python probe/node_contracts.py                   # 노드 계약을 캔다
 ```
 
+키를 안 쓰는 것도 있다. 저장된 출력과 PDF 만 읽는다 — 다만 PDF 는 저장소에 없으니 위 `collect.py` 를 먼저 돌려야 한다.
+
+```bash
+python probe/recheck.py                          # 인용이 원문에 서는지 대조한다
+python probe/compare.py                          # 골든셋과 나란히 놓는다
+python probe/locate.py                           # 후보 줄의 위치를 잰다
+```
+
 `agent/deployed.json` 에 올라가 있는 에이전트와 설정 ID 가 있다. 에이전트는 계정에 붙어 있고 기기에 안 붙어 있어서 다른 기기에서 그대로 쓸 수 있다.
 
 윈도우에서 만들었다. 맥에서는 `python` 을 `python3` 으로 바꾼다. 리눅스는 확인하지 않았다.
 
 ## 문서
 
-[docs/studio-nodes.md](docs/studio-nodes.md) 노드 열넷의 계약 · [docs/variance.md](docs/variance.md) 편차 · [docs/tuning.md](docs/tuning.md) 튜닝 네 갈래 · [docs/phase0-notes.md](docs/phase0-notes.md) 세기 전에 틀린 것 · [docs/phase1-comparison.md](docs/phase1-comparison.md) 골든셋 대조 · [docs/labeling-guide.md](docs/labeling-guide.md) 라벨링 기준
+[docs/studio-nodes.md](docs/studio-nodes.md) 노드 열넷의 계약 · [docs/variance.md](docs/variance.md) 편차 세 층 · [docs/tuning.md](docs/tuning.md) 튜닝 네 갈래 · [docs/phase0-notes.md](docs/phase0-notes.md) 세기 전에 틀린 것 · [docs/phase1-comparison.md](docs/phase1-comparison.md) 골든셋 대조 · [docs/labeling-guide.md](docs/labeling-guide.md) 라벨링 기준
 
 설계 문서는 [docs/superpowers/specs/](docs/superpowers/specs/) 에 있고, 지금 저장소와 다른 것을 말한다. 고치지 않고 둔다 — 무엇을 만들려 했는지가 거기 적혀 있다.
 
